@@ -23,6 +23,7 @@ public class DatabaseConfig extends AbstractR2dbcConfiguration {
         return new H2ConnectionFactory(
                 H2ConnectionConfiguration.builder()
                         .file("~/demodb")
+//                        .option("MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH")
                         .username("user")
                         .password("password").build()
         );
@@ -39,19 +40,16 @@ public class DatabaseConfig extends AbstractR2dbcConfiguration {
         ConnectionFactoryInitializer initializer = new ConnectionFactoryInitializer();
         initializer.setConnectionFactory(connectionFactory);
         CompositeDatabasePopulator populator = new CompositeDatabasePopulator();
-        populator.addPopulators(new ResourceDatabasePopulator(new ClassPathResource("database_tables.sql")));
-
-        ResourceDatabasePopulator data = new ResourceDatabasePopulator(new ClassPathResource("postgres_ExperimentalProtocol_cantons.sql"));
-        data.setContinueOnError(true);
-        populator.addPopulators(data);
-
-//        data = new ResourceDatabasePopulator(new ClassPathResource("postgres_ExperimentalProtocol_schools.sql"));
-//        data.setContinueOnError(true);
-//        populator.addPopulators(data);
-//
-//        data = new ResourceDatabasePopulator(new ClassPathResource("postgres_ExperimentalProtocol_supervisors.sql"));
-//        data.setContinueOnError(true);
-//        populator.addPopulators(data);
+        populator.addPopulators(
+                new ResourceDatabasePopulator(
+                        true, true, null,
+                        new ClassPathResource("cantons.sql"),
+                        new ClassPathResource("schools.sql"),
+                        new ClassPathResource("supervisors.sql"),
+                        new ClassPathResource("session.sql"),
+                        new ClassPathResource("algorithms.sql"),
+                        new ClassPathResource("results.sql")
+                ));
 
         initializer.setDatabasePopulator(populator);
 

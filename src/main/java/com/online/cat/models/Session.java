@@ -35,7 +35,7 @@ public class Session {
     @Column(value = "section")
     private String section;
 
-    @Column(value = "date_collection")
+    @Column(value = "date")
     private LocalDate date;
 
     public Session(int supervisor, int school, int level, int classs, String section, LocalDate date) {
