@@ -45,6 +45,7 @@ public class DatabaseConfig extends AbstractR2dbcConfiguration {
                         true, true, null,
                         new ClassPathResource("cantons.sql"),
                         new ClassPathResource("schools.sql"),
+                        new ClassPathResource("students.sql"),
                         new ClassPathResource("supervisors.sql"),
                         new ClassPathResource("session.sql"),
                         new ClassPathResource("algorithms.sql"),

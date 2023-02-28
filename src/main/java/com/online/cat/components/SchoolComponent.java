@@ -2,7 +2,7 @@ package com.online.cat.components;
 
 import com.online.cat.models.School;
 import com.online.cat.models.SchoolDTO;
-import com.online.cat.repository.SchoolRepository;
+import com.online.cat.repository.SchoolsRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.slf4j.Logger;
@@ -19,9 +19,9 @@ import static org.springframework.web.reactive.function.server.ServerResponse.ok
 @Component
 @Transactional
 public class SchoolComponent {
-    SchoolRepository schoolsRepository;
+    SchoolsRepository schoolsRepository;
     private static final Logger logger = LoggerFactory.getLogger(SchoolComponent.class);
-    public SchoolComponent(SchoolRepository schoolsRepository) {
+    public SchoolComponent(SchoolsRepository schoolsRepository) {
         this.schoolsRepository = schoolsRepository;
     }
 

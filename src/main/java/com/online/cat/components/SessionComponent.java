@@ -2,7 +2,7 @@ package com.online.cat.components;
 
 import com.online.cat.models.Session;
 import com.online.cat.models.SessionDTO;
-import com.online.cat.repository.SessionRepository;
+import com.online.cat.repository.SessionsRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.lang.NonNull;
@@ -20,9 +20,9 @@ import static org.springframework.web.reactive.function.server.ServerResponse.ok
 @Transactional
 public class SessionComponent {
     private static final Logger logger = LoggerFactory.getLogger(SessionComponent.class);
-    SessionRepository sessionRepository;
+    SessionsRepository sessionRepository;
 
-    SessionComponent(SessionRepository sessionRepository) {
+    SessionComponent(SessionsRepository sessionRepository) {
         this.sessionRepository = sessionRepository;
     }
 
