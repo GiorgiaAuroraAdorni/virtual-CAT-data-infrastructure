@@ -10,26 +10,24 @@ import org.springframework.data.relational.core.mapping.Table;
 @Data
 @Builder
 @NoArgsConstructor
+@RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor
 @Table(name = "schools")
 public class School {
-    @Id
-    @Column(value = "id")
-    @Generated
-    private Long id;
-
-    @Column(value = "name")
-    private String name;
-
-    @Column(value = "school_type")
-    private String schoolType;
-
-    @Column(value = "canton")
-    private Long canton;
-
-    public School(String name, String schoolType, long canton) {
-        this.name = name;
-        this.schoolType = schoolType;
-        this.canton = canton;
-    }
+	@Id
+	@Column(value = "id")
+	@Generated
+	private Long id;
+	
+	@Column(value = "name")
+	@NonNull
+	private String name;
+	
+	@Column(value = "school_type")
+	@NonNull
+	private String schoolType;
+	
+	@Column(value = "canton")
+	@NonNull
+	private Long canton;
 }

@@ -1,8 +1,9 @@
 create table algorithms
 (
-    schema                                integer not null,
-    algorithm                             serial constraint algorithms_pk primary key,
-    commands                              text not null,
+    algorithm                             serial
+        constraint algorithms_pk primary key,
+    schema                                integer               not null,
+    commands                              text                  not null,
     algorithm_dimension                   integer,
     description                           text,
     paintdot                              boolean default false not null,
@@ -61,5 +62,5 @@ create table algorithms
     mirrorvertical                        boolean default false not null,
     mirrorhorizontal                      boolean default false not null,
     constraint algorithms_pk
-        primary key (algorithm, schema)
+        primary key (algorithm)
 );

@@ -9,7 +9,11 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SchoolDTO {
-    private String name;
-    private String schoolType;
-    private long canton;
+	private String name;
+	private String schoolType;
+	private Long canton;
+	
+	public School toSchool() {
+		return School.of(name, schoolType, canton);
+	}
 }

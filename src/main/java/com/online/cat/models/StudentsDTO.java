@@ -1,7 +1,6 @@
 package com.online.cat.models;
 
 import lombok.*;
-import org.springframework.data.relational.core.mapping.Column;
 
 import java.time.LocalDate;
 
@@ -11,7 +10,11 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class StudentsDTO {
-    private LocalDate date;
-    private Boolean gender;
-    private Integer session;
+	private LocalDate date;
+	private Boolean gender;
+	private Integer session;
+	
+	public Student toStudent() {
+		return Student.of(date, gender, session);
+	}
 }

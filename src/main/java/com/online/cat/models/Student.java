@@ -10,26 +10,24 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @NoArgsConstructor
+@RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor
 @Data
-@Table(name="students")
+@Table(name = "students")
 public class Student {
-    @Id
-    @Column(value = "id")
-    @Generated
-    private Long id;
-
-    @Column(value = "date_of_birth")
-    private LocalDate date;
-
-    @Column(value = "gender")
-    private boolean gender;
-    @Column(value = "session")
-    private int session;
-
-    public Student(LocalDate date, Boolean gender, Integer session){
-        this.date = date;
-        this.gender = gender;
-        this.session = session;
-    }
+	@Id
+	@Column(value = "id")
+	@Generated
+	private Long id;
+	
+	@Column(value = "date_of_birth")
+	@NonNull
+	private LocalDate date;
+	
+	@Column(value = "gender")
+	@NonNull
+	private boolean gender;
+	@Column(value = "session")
+	@NonNull
+	private int session;
 }

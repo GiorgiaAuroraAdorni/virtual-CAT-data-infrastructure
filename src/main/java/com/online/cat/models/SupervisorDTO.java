@@ -8,5 +8,9 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SupervisorDTO {
-    private String fullName;
+	private String fullName;
+	
+	public Supervisor toSupervisor() {
+		return Supervisor.of(fullName);
+	}
 }

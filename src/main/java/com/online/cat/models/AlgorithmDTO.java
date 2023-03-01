@@ -71,6 +71,7 @@ public class AlgorithmDTO {
 	
 	public Algorithm toAlgorithm() {
 		return Algorithm.of(
+//				AlgorithmID.of(this.schema),
 				this.schema,
 				this.commands,
 				this.algorithmDimension,
