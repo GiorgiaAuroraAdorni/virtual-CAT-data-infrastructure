@@ -17,43 +17,44 @@ import org.springframework.transaction.ReactiveTransactionManager;
 @Configuration
 @EnableR2dbcRepositories
 public class DatabaseConfig extends AbstractR2dbcConfiguration {
-    @Override
-    @Bean
-    public ConnectionFactory connectionFactory() {
-        return new H2ConnectionFactory(
-                H2ConnectionConfiguration.builder()
-                        .file("~/demodb")
+	@Override
+	@Bean
+	public ConnectionFactory connectionFactory() {
+		return new H2ConnectionFactory(
+				H2ConnectionConfiguration.builder()
+						.file("~/demodb")
 //                        .option("MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH")
-                        .username("user")
-                        .password("password").build()
-        );
-    }
-
-    @Bean
-    ReactiveTransactionManager transactionManager(ConnectionFactory connectionFactory) {
-        return new R2dbcTransactionManager(connectionFactory);
-    }
-
-    @Bean
-    ConnectionFactoryInitializer initializer(ConnectionFactory connectionFactory) {
-
-        ConnectionFactoryInitializer initializer = new ConnectionFactoryInitializer();
-        initializer.setConnectionFactory(connectionFactory);
-        CompositeDatabasePopulator populator = new CompositeDatabasePopulator();
-        populator.addPopulators(
-                new ResourceDatabasePopulator(
-                        true, true, null,
-                        new ClassPathResource("cantons.sql"),
-                        new ClassPathResource("schools.sql"),
-                        new ClassPathResource("supervisors.sql"),
-                        new ClassPathResource("session.sql"),
-                        new ClassPathResource("students.sql"),
-                        new ClassPathResource("algorithms.sql"),
-                        new ClassPathResource("results.sql")
-                ));
-
-        initializer.setDatabasePopulator(populator);
-
-        return initializer;
-    }
+						.username("user")
+						.password("password").build()
+		);
+	}
+	
+	@Bean
+	ReactiveTransactionManager transactionManager(ConnectionFactory connectionFactory) {
+		return new R2dbcTransactionManager(connectionFactory);
+	}
+	
+	@Bean
+	ConnectionFactoryInitializer initializer(ConnectionFactory connectionFactory) {
+		
+		ConnectionFactoryInitializer initializer = new ConnectionFactoryInitializer();
+		initializer.setConnectionFactory(connectionFactory);
+		CompositeDatabasePopulator populator = new CompositeDatabasePopulator();
+		populator.addPopulators(
+				new ResourceDatabasePopulator(
+						true, true, null,
+						new ClassPathResource("cantons.sql"),
+						new ClassPathResource("schools.sql"),
+						new ClassPathResource("supervisors.sql"),
+						new ClassPathResource("session.sql"),
+						new ClassPathResource("students.sql"),
+						new ClassPathResource("algorithms.sql"),
+						new ClassPathResource("results.sql"),
+						new ClassPathResource("logs.sql")
+				));
+		
+		initializer.setDatabasePopulator(populator);
+		
+		return initializer;
+	}
 }
