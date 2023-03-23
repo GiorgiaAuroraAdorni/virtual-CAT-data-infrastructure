@@ -51,4 +51,8 @@ public class Result {
 	@Column("artefact_dimension")
 	@NonNull
 	private Integer artefactDimension;
+	
+	@Column("time")
+	@NonNull
+	private Integer time;
 }

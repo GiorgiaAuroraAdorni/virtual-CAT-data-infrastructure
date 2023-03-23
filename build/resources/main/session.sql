@@ -12,5 +12,6 @@ create table sessions
     level      integer not null,
     class      integer not null,
     section    text,
-    date       date    not null
+    date       date    not null,
+    notes      text
 );

@@ -21,6 +21,8 @@ public class ResultsDTO {
 	private Boolean text;
 	private Integer artefactDimension;
 	
+	private Integer time;
+	
 	public Result toResult() {
 		return Result.of(studentID,
 				schemaID,
@@ -32,6 +34,7 @@ public class ResultsDTO {
 				gesture,
 				blocks,
 				text,
-				artefactDimension);
+				artefactDimension,
+				time);
 	}
 }

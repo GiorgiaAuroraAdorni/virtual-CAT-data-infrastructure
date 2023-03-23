@@ -19,23 +19,23 @@ public class Session {
 	@Id
 	@Generated
 	@Column(value = "id")
-	private int id;
+	private Integer id;
 	
 	@Column(value = "supervisor")
 	@NonNull
-	private int supervisor;
+	private Integer supervisor;
 	
 	@Column(value = "school")
 	@NonNull
-	private int school;
+	private Integer school;
 	
 	@Column(value = "level")
 	@NonNull
-	private int level;
+	private Integer level;
 	
 	@Column(value = "class")
 	@NonNull
-	private int classs;
+	private Integer classs;
 	
 	@Column(value = "section")
 	@NonNull
@@ -44,4 +44,8 @@ public class Session {
 	@Column(value = "date")
 	@NonNull
 	private LocalDate date;
+	
+	@Column(value = "notes")
+	@NonNull
+	private String notes;
 }

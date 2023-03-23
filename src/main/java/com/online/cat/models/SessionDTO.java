@@ -17,8 +17,9 @@ public class SessionDTO {
 	private Integer classs;
 	private String section;
 	private LocalDate date;
+	private String notes;
 	
 	public Session toSession() {
-		return Session.of(supervisor, school, level, classs, section, date);
+		return Session.of(supervisor, school, level, classs, section, date, notes);
 	}
 }
