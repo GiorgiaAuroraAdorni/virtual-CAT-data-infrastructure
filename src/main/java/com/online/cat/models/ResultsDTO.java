@@ -2,6 +2,8 @@ package com.online.cat.models;
 
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @Data
@@ -20,8 +22,8 @@ public class ResultsDTO {
 	private Boolean blocks;
 	private Boolean text;
 	private Integer artefactDimension;
-	
 	private Integer time;
+	private LocalDateTime timeStamp;
 	
 	public Result toResult() {
 		return Result.of(studentID,
@@ -35,6 +37,6 @@ public class ResultsDTO {
 				blocks,
 				text,
 				artefactDimension,
-				time);
+				time, timeStamp);
 	}
 }

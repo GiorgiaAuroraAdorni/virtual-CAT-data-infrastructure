@@ -5,6 +5,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @Data
@@ -55,4 +57,8 @@ public class Result {
 	@Column("time")
 	@NonNull
 	private Integer time;
+	
+	@Column(value = "timeStamp")
+	@NonNull
+	private LocalDateTime timeStamp;
 }
