@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cat_online.iml" filepath="$PROJECT_DIR$/.idea/modules/cat_online.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/cat_online.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cat_online.main.iml" />
     </modules>
   </component>

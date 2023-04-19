@@ -13,5 +13,6 @@ create table sessions
     class      integer not null,
     section    text,
     date       date    not null,
-    notes      text
+    notes      text,
+    language   text  not null
 );

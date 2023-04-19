@@ -48,4 +48,8 @@ public class Session {
 	@Column(value = "notes")
 	@NonNull
 	private String notes;
+	
+	@Column(value = "language")
+	@NonNull
+	private String language;
 }
