@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Setter
 @Data
 @Builder
-@NoArgsConstructor
+@NoArgsConstructor(force = true)
 @RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor
 @Table(name = "sessions")
@@ -19,23 +19,23 @@ public class Session {
 	@Id
 	@Generated
 	@Column(value = "id")
-	private Integer id;
+	private Long id;
 	
 	@Column(value = "supervisor")
 	@NonNull
-	private Integer supervisor;
+	private Long supervisor;
 	
 	@Column(value = "school")
 	@NonNull
-	private Integer school;
+	private Long school;
 	
 	@Column(value = "level")
 	@NonNull
-	private Integer level;
+	private Long level;
 	
 	@Column(value = "class")
 	@NonNull
-	private Integer classs;
+	private Long classs;
 	
 	@Column(value = "section")
 	@NonNull

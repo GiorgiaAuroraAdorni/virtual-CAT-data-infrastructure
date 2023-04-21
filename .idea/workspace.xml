@@ -4,38 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="435b07b6-fc7a-4ae1-8059-c4db055bc7ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="435b07b6-fc7a-4ae1-8059-c4db055bc7ae" name="Changes" comment="Fixed typing.">
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JPA_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cat_online.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cat_online.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cat_online.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/online/cat/configuration/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/online/cat/configuration/DatabaseConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/online/cat/models/Session$SessionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/online/cat/models/Session$SessionBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/online/cat/models/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/online/cat/models/Session.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/online/cat/models/SessionDTO$SessionDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/online/cat/models/SessionDTO$SessionDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/online/cat/models/SessionDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/online/cat/models/SessionDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/session.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/session.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DatabaseConfig.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/CatLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/CatLogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/CatLogsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/CatLogsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/ResultsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/ResultsDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Session.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/SessionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/SessionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/session.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/session.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/StudentsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/StudentsDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,15 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/vladimirkarpenko/Documents/git/virtual-CAT-databse",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vladimirkarpenko/Documents/git/virtual-CAT-databse&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3fb75e91c54e077b33a2cf2494b7c83e&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="CatOnlineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cat_online.main" />
@@ -95,8 +81,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681927176192</updated>
-      <workItem from="1681927177220" duration="938000" />
+      <workItem from="1681927177220" duration="2430000" />
+      <workItem from="1682000739261" duration="607000" />
+      <workItem from="1682088405313" duration="490000" />
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed typing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed typing." />
   </component>
 </project>

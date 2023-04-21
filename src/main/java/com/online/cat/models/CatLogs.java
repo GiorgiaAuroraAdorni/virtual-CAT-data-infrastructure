@@ -9,7 +9,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Setter
 @Data
 @Builder
-@NoArgsConstructor
+@NoArgsConstructor(force = true)
 @RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor
 @Table(name = "logs")
@@ -21,7 +21,7 @@ public class CatLogs {
 	
 	@Column(value = "result_id")
 	@NonNull
-	private Integer resultID;
+	private Long resultID;
 	
 	@Column(value = "log")
 	@NonNull

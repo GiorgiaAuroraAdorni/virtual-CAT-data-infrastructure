@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Setter
 @Data
 @Builder
-@NoArgsConstructor
+@NoArgsConstructor(force = true)
 @RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor
 @Table(name = "results")
@@ -56,7 +56,7 @@ public class Result {
 	
 	@Column("time")
 	@NonNull
-	private Integer time;
+	private Long time;
 	
 	@Column(value = "timeStamp")
 	@NonNull

@@ -22,7 +22,7 @@ public class ResultsDTO {
 	private Boolean blocks;
 	private Boolean text;
 	private Integer artefactDimension;
-	private Integer time;
+	private Long time;
 	private LocalDateTime timeStamp;
 	
 	public Result toResult() {

@@ -12,7 +12,7 @@ import java.time.LocalDate;
 public class StudentsDTO {
 	private LocalDate date;
 	private Boolean gender;
-	private Integer session;
+	private Long session;
 	
 	public Student toStudent() {
 		return Student.of(date, gender, session);

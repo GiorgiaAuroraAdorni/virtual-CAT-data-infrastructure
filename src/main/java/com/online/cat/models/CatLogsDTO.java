@@ -8,7 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CatLogsDTO {
-	private Integer resultID;
+	private Long resultID;
 	private String log;
 	
 	public CatLogs toCatLogs() {

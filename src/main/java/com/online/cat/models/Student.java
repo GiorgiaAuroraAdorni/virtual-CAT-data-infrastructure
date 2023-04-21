@@ -9,7 +9,7 @@ import java.time.LocalDate;
 
 @Getter
 @Setter
-@NoArgsConstructor
+@NoArgsConstructor(force = true)
 @RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor
 @Data
@@ -26,8 +26,8 @@ public class Student {
 	
 	@Column(value = "gender")
 	@NonNull
-	private boolean gender;
+	private Boolean gender;
 	@Column(value = "session")
 	@NonNull
-	private int session;
+	private Long session;
 }

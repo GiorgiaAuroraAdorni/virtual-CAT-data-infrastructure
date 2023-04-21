@@ -11,10 +11,10 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SessionDTO {
-	private Integer supervisor;
-	private Integer school;
-	private Integer level;
-	private Integer classs;
+	private Long supervisor;
+	private Long school;
+	private Long level;
+	private Long classs;
 	private String section;
 	private LocalDate date;
 	private String notes;
