@@ -15,6 +15,7 @@ create table results
     artefact_dimension integer               not null,
     time               integer               not null,
     timeStamp          datetime              not null,
+    complete          boolean              not null,
     constraint results_pk
         primary key (id)
 );

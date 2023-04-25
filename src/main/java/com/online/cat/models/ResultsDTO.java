@@ -24,6 +24,7 @@ public class ResultsDTO {
 	private Integer artefactDimension;
 	private Long time;
 	private LocalDateTime timeStamp;
+	private Boolean complete;
 	
 	public Result toResult() {
 		return Result.of(studentID,
@@ -37,6 +38,8 @@ public class ResultsDTO {
 				blocks,
 				text,
 				artefactDimension,
-				time, timeStamp);
+				time,
+				timeStamp,
+				complete);
 	}
 }

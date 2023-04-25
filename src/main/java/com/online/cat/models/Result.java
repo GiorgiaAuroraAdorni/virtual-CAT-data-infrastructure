@@ -61,4 +61,8 @@ public class Result {
 	@Column(value = "timeStamp")
 	@NonNull
 	private LocalDateTime timeStamp;
+	
+	@Column(value = "complete")
+	@NonNull
+	private Boolean complete;
 }
