@@ -9,7 +9,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Setter
 @Data
 @Builder
-@NoArgsConstructor
+@NoArgsConstructor(force = true)
 @RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor
 @Table(name = "schools")

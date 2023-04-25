@@ -16,6 +16,7 @@ public class StudentRouter {
     public RouterFunction<ServerResponse> students(StudentComponent studentComponent){
         return route()
                 .POST("/students",accept(APPLICATION_JSON),studentComponent::addStudent)
+                .GET("/students",accept(APPLICATION_JSON), studentComponent::getAll)
                 .build();
     }
 }

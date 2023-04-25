@@ -1,5 +1,6 @@
 package com.online.cat.components;
 
+import com.online.cat.models.Student;
 import com.online.cat.models.StudentsDTO;
 import com.online.cat.repository.StudentsRepository;
 import org.slf4j.Logger;
@@ -12,6 +13,7 @@ import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
+import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.web.reactive.function.server.ServerResponse.badRequest;
 import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
@@ -35,5 +37,10 @@ public class StudentComponent {
 						.onErrorResume(error -> Mono.empty()))
 				.flatMap(student -> ok().contentType(MediaType.APPLICATION_JSON).bodyValue(student))
 				.switchIfEmpty(badRequest().bodyValue("Wrong format"));
+	}
+	
+	@Transactional(readOnly = true)
+	public @NonNull Mono<ServerResponse> getAll(ServerRequest request) {
+		return ok().contentType(APPLICATION_JSON).body(studentsRepository.findAll(), Student.class);
 	}
 }

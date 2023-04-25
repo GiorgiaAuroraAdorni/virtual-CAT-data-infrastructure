@@ -1,5 +1,6 @@
 package com.online.cat.components;
 
+import com.online.cat.models.Session;
 import com.online.cat.models.SessionDTO;
 import com.online.cat.repository.SessionsRepository;
 import org.slf4j.Logger;
@@ -35,5 +36,10 @@ public class SessionComponent {
 						.onErrorResume(error -> Mono.empty()))
 				.flatMap(supervisor -> ok().contentType(APPLICATION_JSON).bodyValue(supervisor))
 				.switchIfEmpty(badRequest().bodyValue("Wrong format"));
+	}
+	
+	@Transactional(readOnly = true)
+	public @NonNull Mono<ServerResponse> getAll(ServerRequest request) {
+		return ok().contentType(APPLICATION_JSON).body(sessionRepository.findAll(), Session.class);
 	}
 }
