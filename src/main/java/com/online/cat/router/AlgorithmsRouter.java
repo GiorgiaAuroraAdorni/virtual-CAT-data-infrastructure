@@ -17,6 +17,7 @@ public class AlgorithmsRouter {
 	public RouterFunction<ServerResponse> algorithms(AlgorithmComponent algorithmComponent) {
 		return route()
 				.POST("/algorithms", accept(APPLICATION_JSON), algorithmComponent::addAlgorithm)
+				.GET("/algorithms", accept(APPLICATION_JSON), algorithmComponent::getAlgorithmCommands)
 				.build();
 	}
 }

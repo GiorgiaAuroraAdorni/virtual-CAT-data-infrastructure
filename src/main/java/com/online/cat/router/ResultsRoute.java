@@ -16,6 +16,7 @@ public class ResultsRoute {
 	public RouterFunction<ServerResponse> results(ResultsComponent resultsComponent) {
 		return route()
 				.POST("/results", accept(APPLICATION_JSON), resultsComponent::addResult)
+				.GET("/results", accept(APPLICATION_JSON), resultsComponent::getByStudentID)
 				.build();
 	}
 }

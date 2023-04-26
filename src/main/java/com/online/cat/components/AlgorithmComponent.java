@@ -12,8 +12,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON;
-import static org.springframework.web.reactive.function.server.ServerResponse.badRequest;
-import static org.springframework.web.reactive.function.server.ServerResponse.ok;
+import static org.springframework.web.reactive.function.server.ServerResponse.*;
 
 @Component
 @Transactional
@@ -35,5 +34,18 @@ public class AlgorithmComponent {
 						.onErrorResume(error -> Mono.empty()))
 				.flatMap(algorithm -> ok().contentType(APPLICATION_JSON).bodyValue(algorithm))
 				.switchIfEmpty(badRequest().bodyValue("Wrong format"));
+	}
+	
+	@Transactional(readOnly = true)
+	public @NonNull Mono<ServerResponse> getAlgorithmCommands(ServerRequest request) {
+		return request
+				.bodyToMono(AlgorithmID.class)
+				.flatMap(algorithmID -> algorithmsRepository.findById(algorithmID.id()))
+				.switchIfEmpty(Mono.error(new Exception()))
+				.flatMap(algorithmID -> ok().body(algorithmsRepository.findByAlgorithmAndReturnCommands(algorithmID.getAlgorithm()),String.class))
+				.onErrorResume(error -> notFound().build());
+	}
+	
+	record AlgorithmID(Long id) {
 	}
 }
