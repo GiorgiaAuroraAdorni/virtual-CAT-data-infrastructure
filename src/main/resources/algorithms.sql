@@ -73,8 +73,13 @@ create table algorithms
     paintzigzagdownrightleftpolychromatic boolean default false not null,
     fillempty                             boolean default false not null,
     copy                                  boolean default false not null,
-    mirrorvertical                        boolean default false not null,
-    mirrorhorizontal                      boolean default false not null,
+    repeat                                boolean default false not null,
+    mirrorcrossvertical                   boolean default false not null,
+    mirrorcrosshorizontal                 boolean default false not null,
+    mirrorcellsvertical                   boolean default false not null,
+    mirrorcellshorizontal                 boolean default false not null,
+    mirrorcommandsvertical                boolean default false not null,
+    mirrorcommandshorizontal              boolean default false not null,
     constraint algorithms_pk
         primary key (algorithm)
 );

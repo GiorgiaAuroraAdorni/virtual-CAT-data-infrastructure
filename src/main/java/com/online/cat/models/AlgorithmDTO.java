@@ -80,8 +80,13 @@ public class AlgorithmDTO {
 	private Boolean paintzigzagdownrightleftpolychromatic;
 	private Boolean fillempty;
 	private Boolean copy;
-	private Boolean mirrorvertical;
-	private Boolean mirrorhorizontal;
+	private Boolean repeat;
+	private Boolean mirrorcrossvertical;
+	private Boolean mirrorcrosshorizontal;
+	private Boolean mirrorcellsvertical;
+	private Boolean mirrorcellshorizontal;
+	private Boolean mirrorcommandsvertical;
+	private Boolean mirrorcommandshorizontal;
 	
 	public Algorithm toAlgorithm() {
 		return Algorithm.of(
@@ -160,8 +165,13 @@ public class AlgorithmDTO {
 				this.paintzigzagdownrightleftpolychromatic,
 				this.fillempty,
 				this.copy,
-				this.mirrorvertical,
-				this.mirrorhorizontal
+				this.repeat,
+				this.mirrorcrossvertical,
+				this.mirrorcrosshorizontal,
+				this.mirrorcellsvertical,
+				this.mirrorcellshorizontal,
+				this.mirrorcommandsvertical,
+				this.mirrorcommandshorizontal
 		);
 	}
 }

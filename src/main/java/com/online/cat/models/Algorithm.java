@@ -301,12 +301,32 @@ public class Algorithm {
 	@Column("COPY")
 	@NonNull
 	private Boolean copy;
-	
-	@Column("MIRRORVERTICAL")
+
+	@Column("REPEAT")
 	@NonNull
-	private Boolean mirrorvertical;
+	private Boolean repeat;
 	
-	@Column("MIRRORHORIZONTAL")
+	@Column("MIRRORCROSSVERTICAL")
 	@NonNull
-	private Boolean mirrorhorizontal;
+	private Boolean mirrorcrossvertical;
+	
+	@Column("MIRRORCROSSHORIZONTAL")
+	@NonNull
+	private Boolean mirrorcrosshorizontal;
+
+	@Column("MIRRORCELLSVERTICAL")
+	@NonNull
+	private Boolean mirrorcellsvertical;
+
+	@Column("MIRRORCELLSHORIZONTAL")
+	@NonNull
+	private Boolean mirrorcellshorizontal;
+
+	@Column("MIRRORCOMMANDSVERTICAL")
+	@NonNull
+	private Boolean mirrorcommandsvertical;
+
+	@Column("MIRRORCOMMANDSHORIZONTAL")
+	@NonNull
+	private Boolean mirrorcommandshorizontal;
 }
