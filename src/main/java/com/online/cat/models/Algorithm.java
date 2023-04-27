@@ -34,267 +34,267 @@ public class Algorithm {
 	@NonNull
 	private String description;
 	
-	@Column("PAINTDOT")
+	@Column("PAINT_DOT")
 	@NonNull
 	private Boolean paintdot;
 	
-	@Column("PAINTUPMONOCHROMATIC")
+	@Column("PAINT_UP_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintupmonochromatic;
 	
-	@Column("PAINTDOWNMONOCHROMATIC")
+	@Column("PAINT_DOWN_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintdownmonochromatic;
 	
-	@Column("PAINTLEFTMONOCHROMATIC")
+	@Column("PAINT_LEFT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintleftmonochromatic;
 	
-	@Column("PAINTRIGHTMONOCHROMATIC")
+	@Column("PAINT_RIGHT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintrightmonochromatic;
 	
-	@Column("PAINTSQUAREUPLEFTDOWNMONOCHROMATIC")
+	@Column("PAINT_SQUARE_UPLEFTDOWN_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintsquareupleftdownmonochromatic;
 
-	@Column("PAINTSQUAREUPRIGHTDOWNMONOCHROMATIC")
+	@Column("PAINT_SQUARE_UPRIGHTDOWN_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintsquareuprightdownmonochromatic;
 
-	@Column("PAINTSQUARERIGHTDOWNLEFTMONOCHROMATIC")
+	@Column("PAINT_SQUARE_RIGHTDOWNLEFT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintsquarerightdownleftmonochromatic;
 
-	@Column("PAINTSQUARERIGHTUPLEFTMONOCHROMATIC")
+	@Column("PAINT_SQUARE_RIGHTUPLEFT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintsquarerightupleftmonochromatic;
 
-	@Column("PAINTSQUARELEFTDOWNRIGHTMONOCHROMATIC")
+	@Column("PAINT_SQUARE_LEFTDOWNRIGHT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintsquareleftdownrightmonochromatic;
 
-	@Column("PAINTSQUARELEFTUPRIGHTMONOCHROMATIC")
+	@Column("PAINT_SQUARE_LEFTUPRIGHT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintsquareleftuprightmonochromatic;
 
-	@Column("PAINTSQUAREDOWNLEFTUPMONOCHROMATIC")
+	@Column("PAINT_SQUARE_DOWNLEFTUP_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintsquaredownleftupmonochromatic;
 
-	@Column("PAINTSQUAREDOWNRIGHTUPMONOCHROMATIC")
+	@Column("PAINT_SQUARE_DOWNRIGHTUP_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintsquaredownrightupmonochromatic;
 
-	@Column("PAINTDIAGONALUPLEFTMONOCHROMATIC")
+	@Column("PAINT_DIAGONAL_UPLEFT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintdiagonalupleftmonochromatic;
 	
-	@Column("PAINTDIAGONALUPRIGHTMONOCHROMATIC")
+	@Column("PAINT_DIAGONAL_UPRIGHT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintdiagonaluprightmonochromatic;
 	
-	@Column("PAINTDIAGONALDOWNLEFTMONOCHROMATIC")
+	@Column("PAINT_DIAGONAL_DOWNLEFT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintdiagonaldownleftmonochromatic;
 	
-	@Column("PAINTDIAGONALDOWNRIGHTMONOCHROMATIC")
+	@Column("PAINT_DIAGONAL_DOWNRIGHT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintdiagonaldownrightmonochromatic;
 	
-	@Column("PAINTLUPLEFTMONOCHROMATIC")
+	@Column("PAINT_L_UPLEFT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintlupleftmonochromatic;
 	
-	@Column("PAINTLUPRIGHTMONOCHROMATIC")
+	@Column("PAINT_L_UPRIGHT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintluprightmonochromatic;
 	
-	@Column("PAINTLDOWNLEFTMONOCHROMATIC")
+	@Column("PAINT_L_DOWNLEFT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintldownleftmonochromatic;
 	
-	@Column("PAINTLDOWNRIGHTMONOCHROMATIC")
+	@Column("PAINT_L_DOWNRIGHT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintldownrightmonochromatic;
 	
-	@Column("PAINTLLEFTUPMONOCHROMATIC")
+	@Column("PAINT_L_LEFTUP_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintlleftupmonochromatic;
 	
-	@Column("PAINTLLEFTDOWNMONOCHROMATIC")
+	@Column("PAINT_L_LEFTDOWN_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintlleftdownmonochromatic;
 	
-	@Column("PAINTLRIGHTUPMONOCHROMATIC")
+	@Column("PAINT_L_RIGHTUP_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintlrightupmonochromatic;
 	
-	@Column("PAINTLRIGHTDOWNMONOCHROMATIC")
+	@Column("PAINT_L_RIGHTDOWN_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintlrightdownmonochromatic;
 	
-	@Column("PAINTZIGZAGLEFTUPDOWNMONOCHROMATIC")
+	@Column("PAINT_ZIGZAG_LEFTUPDOWN_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagleftupdownmonochromatic;
 	
-	@Column("PAINTZIGZAGLEFTDOWNUPMONOCHROMATIC")
+	@Column("PAINT_ZIGZAG_LEFTDOWNUP_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagleftdownupmonochromatic;
 	
-	@Column("PAINTZIGZAGRIGHTUPDOWNMONOCHROMATIC")
+	@Column("PAINT_ZIGZAG_RIGHTUPDOWN_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagrightupdownmonochromatic;
 	
-	@Column("PAINTZIGZAGRIGHTDOWNUPMONOCHROMATIC")
+	@Column("PAINT_ZIGZAG_RIGHTDOWNUP_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagrightdownupmonochromatic;
 	
-	@Column("PAINTZIGZAGUPLEFTRIGHTMONOCHROMATIC")
+	@Column("PAINT_ZIGZAG_UPLEFTRIGHT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagupleftrightmonochromatic;
 	
-	@Column("PAINTZIGZAGUPRIGHTLEFTMONOCHROMATIC")
+	@Column("PAINT_ZIGZAG_UPRIGHTLEFT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintzigzaguprightleftmonochromatic;
 	
-	@Column("PAINTZIGZAGDOWNLEFTRIGHTMONOCHROMATIC")
+	@Column("PAINT_ZIGZAG_DOWNLEFTRIGHT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagdownleftrightmonochromatic;
 	
-	@Column("PAINTZIGZAGDOWNRIGHTLEFTMONOCHROMATIC")
+	@Column("PAINT_ZIGZAG_DOWNRIGHTLEFT_MONOCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagdownrightleftmonochromatic;
 	
-	@Column("PAINTUPPOLYCHROMATIC")
+	@Column("PAINT_UP_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintuppolychromatic;
 	
-	@Column("PAINTDOWNPOLYCHROMATIC")
+	@Column("PAINT_DOWN_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintdownpolychromatic;
 	
-	@Column("PAINTLEFTPOLYCHROMATIC")
+	@Column("PAINT_LEFT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintleftpolychromatic;
 	
-	@Column("PAINTRIGHTPOLYCHROMATIC")
+	@Column("PAINT_RIGHT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintrightpolychromatic;
 
-	@Column("PAINTSQUAREUPLEFTDOWNPOLYCHROMATIC")
+	@Column("PAINT_SQUARE_UPLEFTDOWN_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintsquareupleftdownpolychromatic;
 
-	@Column("PAINTSQUAREUPRIGHTDOWNPOLYCHROMATIC")
+	@Column("PAINT_SQUARE_UPRIGHTDOWN_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintsquareuprightdownpolychromatic;
 
-	@Column("PAINTSQUARERIGHTDOWNLEFTPOLYCHROMATIC")
+	@Column("PAINT_SQUARE_RIGHTDOWNLEFT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintsquarerightdownleftpolychromatic;
 
-	@Column("PAINTSQUARERIGHTUPLEFTPOLYCHROMATIC")
+	@Column("PAINT_SQUARE_RIGHTUPLEFT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintsquarerightupleftpolychromatic;
 
-	@Column("PAINTSQUARELEFTDOWNRIGHTPOLYCHROMATIC")
+	@Column("PAINT_SQUARE_LEFTDOWNRIGHT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintsquareleftdownrightpolychromatic;
 
-	@Column("PAINTSQUARELEFTUPRIGHTPOLYCHROMATIC")
+	@Column("PAINT_SQUARE_LEFTUPRIGHT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintsquareleftuprightpolychromatic;
 
-	@Column("PAINTSQUAREDOWNLEFTUPPOLYCHROMATIC")
+	@Column("PAINT_SQUARE_DOWNLEFTUP_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintsquaredownleftuppolychromatic;
 
-	@Column("PAINTSQUAREDOWNRIGHTUPPOLYCHROMATIC")
+	@Column("PAINT_SQUARE_DOWNRIGHTUP_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintsquaredownrightuppolychromatic;
 
-	@Column("PAINTDIAGONALUPLEFTPOLYCHROMATIC")
+	@Column("PAINT_DIAGONAL_UPLEFT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintdiagonalupleftpolychromatic;
 	
-	@Column("PAINTDIAGONALUPRIGHTPOLYCHROMATIC")
+	@Column("PAINT_DIAGONAL_UPRIGHT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintdiagonaluprightpolychromatic;
 	
-	@Column("PAINTDIAGONALDOWNLEFTPOLYCHROMATIC")
+	@Column("PAINT_DIAGONAL_DOWNLEFT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintdiagonaldownleftpolychromatic;
 	
-	@Column("PAINTDIAGONALDOWNRIGHTPOLYCHROMATIC")
+	@Column("PAINT_DIAGONAL_DOWNRIGHT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintdiagonaldownrightpolychromatic;
 	
-	@Column("PAINTLUPLEFTPOLYCHROMATIC")
+	@Column("PAINT_L_UPLEFT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintlupleftpolychromatic;
 	
-	@Column("PAINTLUPRIGHTPOLYCHROMATIC")
+	@Column("PAINT_L_UPRIGHT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintluprightpolychromatic;
 	
-	@Column("PAINTLDOWNLEFTPOLYCHROMATIC")
+	@Column("PAINT_L_DOWNLEFT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintldownleftpolychromatic;
 	
-	@Column("PAINTLDOWNRIGHTPOLYCHROMATIC")
+	@Column("PAINT_L_DOWNRIGHT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintldownrightpolychromatic;
 	
-	@Column("PAINTLLEFTUPPOLYCHROMATIC")
+	@Column("PAINT_L_LEFTUP_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintlleftuppolychromatic;
 	
-	@Column("PAINTLLEFTDOWNPOLYCHROMATIC")
+	@Column("PAINT_L_LEFTDOWN_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintlleftdownpolychromatic;
 	
-	@Column("PAINTLRIGHTUPPOLYCHROMATIC")
+	@Column("PAINT_L_RIGHTUP_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintlrightuppolychromatic;
 	
-	@Column("PAINTLRIGHTDOWNPOLYCHROMATIC")
+	@Column("PAINT_L_RIGHTDOWN_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintlrightdownpolychromatic;
 	
-	@Column("PAINTZIGZAGLEFTUPDOWNPOLYCHROMATIC")
+	@Column("PAINT_ZIGZAG_LEFTUPDOWN_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagleftupdownpolychromatic;
 	
-	@Column("PAINTZIGZAGLEFTDOWNUPPOLYCHROMATIC")
+	@Column("PAINT_ZIGZAG_LEFTDOWNUP_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagleftdownuppolychromatic;
 	
-	@Column("PAINTZIGZAGRIGHTUPDOWNPOLYCHROMATIC")
+	@Column("PAINT_ZIGZAG_RIGHTUPDOWN_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagrightupdownpolychromatic;
 	
-	@Column("PAINTZIGZAGRIGHTDOWNUPPOLYCHROMATIC")
+	@Column("PAINT_ZIGZAG_RIGHTDOWNUP_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagrightdownuppolychromatic;
 	
-	@Column("PAINTZIGZAGUPLEFTRIGHTPOLYCHROMATIC")
+	@Column("PAINT_ZIGZAG_UPLEFTRIGHT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagupleftrightpolychromatic;
 	
-	@Column("PAINTZIGZAGUPRIGHTLEFTPOLYCHROMATIC")
+	@Column("PAINT_ZIGZAG_UPRIGHTLEFT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintzigzaguprightleftpolychromatic;
 	
-	@Column("PAINTZIGZAGDOWNLEFTRIGHTPOLYCHROMATIC")
+	@Column("PAINT_ZIGZAG_DOWNLEFTRIGHT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagdownleftrightpolychromatic;
 	
-	@Column("PAINTZIGZAGDOWNRIGHTLEFTPOLYCHROMATIC")
+	@Column("PAINT_ZIGZAG_DOWNRIGHTLEFT_POLYCHROMATIC")
 	@NonNull
 	private Boolean paintzigzagdownrightleftpolychromatic;
 	
-	@Column("FILLEMPTY")
+	@Column("FILL_EMPTY")
 	@NonNull
 	private Boolean fillempty;
 	
@@ -306,27 +306,27 @@ public class Algorithm {
 	@NonNull
 	private Boolean repeat;
 	
-	@Column("MIRRORCROSSVERTICAL")
+	@Column("MIRROR_CROSS_VERTICAL")
 	@NonNull
 	private Boolean mirrorcrossvertical;
 	
-	@Column("MIRRORCROSSHORIZONTAL")
+	@Column("MIRROR_CROSS_HORIZONTAL")
 	@NonNull
 	private Boolean mirrorcrosshorizontal;
 
-	@Column("MIRRORCELLSVERTICAL")
+	@Column("MIRROR_CELLS_VERTICAL")
 	@NonNull
 	private Boolean mirrorcellsvertical;
 
-	@Column("MIRRORCELLSHORIZONTAL")
+	@Column("MIRROR_CELLS_HORIZONTAL")
 	@NonNull
 	private Boolean mirrorcellshorizontal;
 
-	@Column("MIRRORCOMMANDSVERTICAL")
+	@Column("MIRROR_COMMANDS_VERTICAL")
 	@NonNull
 	private Boolean mirrorcommandsvertical;
 
-	@Column("MIRRORCOMMANDSHORIZONTAL")
+	@Column("MIRROR_COMMANDS_HORIZONTAL")
 	@NonNull
 	private Boolean mirrorcommandshorizontal;
 }
