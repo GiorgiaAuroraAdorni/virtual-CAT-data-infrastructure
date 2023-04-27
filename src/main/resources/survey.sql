@@ -6,5 +6,5 @@ create table survey
         constraint student_id_fk references students,
     session_id integer not null
         constraint session_id_fk references sessions,
-    results    text    not null,
+    results    text    not null
 );

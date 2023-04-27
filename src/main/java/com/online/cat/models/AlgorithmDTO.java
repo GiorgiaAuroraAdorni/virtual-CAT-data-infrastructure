@@ -18,6 +18,7 @@ public class AlgorithmDTO {
 	private Boolean paintdownmonochromatic;
 	private Boolean paintleftmonochromatic;
 	private Boolean paintrightmonochromatic;
+	// Square monochromatic
 	private Boolean paintsquareupleftdownmonochromatic;
 	private Boolean paintsquareuprightdownmonochromatic;
 	private Boolean paintsquarerightdownleftmonochromatic;
@@ -26,7 +27,7 @@ public class AlgorithmDTO {
 	private Boolean paintsquareleftuprightmonochromatic;
 	private Boolean paintsquaredownleftupmonochromatic;
 	private Boolean paintsquaredownrightupmonochromatic;
-
+	
 	private Boolean paintdiagonalupleftmonochromatic;
 	private Boolean paintdiagonaluprightmonochromatic;
 	private Boolean paintdiagonaldownleftmonochromatic;
@@ -51,6 +52,7 @@ public class AlgorithmDTO {
 	private Boolean paintdownpolychromatic;
 	private Boolean paintleftpolychromatic;
 	private Boolean paintrightpolychromatic;
+	// Square polychromatic
 	private Boolean paintsquareupleftdownpolychromatic;
 	private Boolean paintsquareuprightdownpolychromatic;
 	private Boolean paintsquarerightdownleftpolychromatic;
@@ -63,6 +65,7 @@ public class AlgorithmDTO {
 	private Boolean paintdiagonaluprightpolychromatic;
 	private Boolean paintdiagonaldownleftpolychromatic;
 	private Boolean paintdiagonaldownrightpolychromatic;
+	
 	private Boolean paintlupleftpolychromatic;
 	private Boolean paintluprightpolychromatic;
 	private Boolean paintldownleftpolychromatic;
@@ -96,7 +99,16 @@ public class AlgorithmDTO {
 				this.paintdownmonochromatic,
 				this.paintleftmonochromatic,
 				this.paintrightmonochromatic,
-				this.paintsquaremonochromatic,
+				//
+				this.paintsquareupleftdownmonochromatic,
+				this.paintsquareuprightdownmonochromatic,
+				this.paintsquarerightdownleftmonochromatic,
+				this.paintsquarerightupleftmonochromatic,
+				this.paintsquareleftdownrightmonochromatic,
+				this.paintsquareleftuprightmonochromatic,
+				this.paintsquaredownleftupmonochromatic,
+				this.paintsquaredownrightupmonochromatic,
+				//
 				this.paintdiagonalupleftmonochromatic,
 				this.paintdiagonaluprightmonochromatic,
 				this.paintdiagonaldownleftmonochromatic,
@@ -121,7 +133,16 @@ public class AlgorithmDTO {
 				this.paintdownpolychromatic,
 				this.paintleftpolychromatic,
 				this.paintrightpolychromatic,
-				this.paintsquarepolychromatic,
+				//
+				this.paintsquareupleftdownpolychromatic,
+				this.paintsquareuprightdownpolychromatic,
+				this.paintsquarerightdownleftpolychromatic,
+				this.paintsquarerightupleftpolychromatic,
+				this.paintsquareleftdownrightpolychromatic,
+				this.paintsquareleftuprightpolychromatic,
+				this.paintsquaredownleftuppolychromatic,
+				this.paintsquaredownrightuppolychromatic,
+				//
 				this.paintdiagonalupleftpolychromatic,
 				this.paintdiagonaluprightpolychromatic,
 				this.paintdiagonaldownleftpolychromatic,
