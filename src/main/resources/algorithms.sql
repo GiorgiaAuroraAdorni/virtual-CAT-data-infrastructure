@@ -49,7 +49,7 @@ create table algorithms
     paintsquarerightupleftpolychromatic   boolean default false not null,
     paintsquareleftdownrightpolychromatic boolean default false not null,
     paintsquareleftuprightpolychromatic   boolean default false not null,
-    paintsquaredownleftpolychromatic    boolean default false not null,
+    paintsquaredownleftuppolychromatic      boolean default false not null,
     paintsquaredownrightuppolychromatic   boolean default false not null,
     paintdiagonalupleftpolychromatic      boolean default false not null,
     paintdiagonaluprightpolychromatic     boolean default false not null,

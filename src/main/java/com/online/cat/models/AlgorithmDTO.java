@@ -18,7 +18,6 @@ public class AlgorithmDTO {
 	private Boolean paintdownmonochromatic;
 	private Boolean paintleftmonochromatic;
 	private Boolean paintrightmonochromatic;
-	// Square monochromatic
 	private Boolean paintsquareupleftdownmonochromatic;
 	private Boolean paintsquareuprightdownmonochromatic;
 	private Boolean paintsquarerightdownleftmonochromatic;
@@ -27,7 +26,6 @@ public class AlgorithmDTO {
 	private Boolean paintsquareleftuprightmonochromatic;
 	private Boolean paintsquaredownleftupmonochromatic;
 	private Boolean paintsquaredownrightupmonochromatic;
-	
 	private Boolean paintdiagonalupleftmonochromatic;
 	private Boolean paintdiagonaluprightmonochromatic;
 	private Boolean paintdiagonaldownleftmonochromatic;
@@ -52,7 +50,6 @@ public class AlgorithmDTO {
 	private Boolean paintdownpolychromatic;
 	private Boolean paintleftpolychromatic;
 	private Boolean paintrightpolychromatic;
-	// Square polychromatic
 	private Boolean paintsquareupleftdownpolychromatic;
 	private Boolean paintsquareuprightdownpolychromatic;
 	private Boolean paintsquarerightdownleftpolychromatic;
@@ -65,7 +62,6 @@ public class AlgorithmDTO {
 	private Boolean paintdiagonaluprightpolychromatic;
 	private Boolean paintdiagonaldownleftpolychromatic;
 	private Boolean paintdiagonaldownrightpolychromatic;
-	
 	private Boolean paintlupleftpolychromatic;
 	private Boolean paintluprightpolychromatic;
 	private Boolean paintldownleftpolychromatic;
@@ -89,7 +85,6 @@ public class AlgorithmDTO {
 	
 	public Algorithm toAlgorithm() {
 		return Algorithm.of(
-//				AlgorithmID.of(this.schema),
 				this.schema,
 				this.commands,
 				this.algorithmDimension,
