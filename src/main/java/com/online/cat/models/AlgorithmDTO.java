@@ -18,7 +18,15 @@ public class AlgorithmDTO {
 	private Boolean paintdownmonochromatic;
 	private Boolean paintleftmonochromatic;
 	private Boolean paintrightmonochromatic;
-	private Boolean paintsquaremonochromatic;
+	private Boolean paintsquareupleftdownmonochromatic;
+	private Boolean paintsquareuprightdownmonochromatic;
+	private Boolean paintsquarerightdownleftmonochromatic;
+	private Boolean paintsquarerightupleftmonochromatic;
+	private Boolean paintsquareleftdownrightmonochromatic;
+	private Boolean paintsquareleftuprightmonochromatic;
+	private Boolean paintsquaredownleftupmonochromatic;
+	private Boolean paintsquaredownrightupmonochromatic;
+
 	private Boolean paintdiagonalupleftmonochromatic;
 	private Boolean paintdiagonaluprightmonochromatic;
 	private Boolean paintdiagonaldownleftmonochromatic;
@@ -43,7 +51,14 @@ public class AlgorithmDTO {
 	private Boolean paintdownpolychromatic;
 	private Boolean paintleftpolychromatic;
 	private Boolean paintrightpolychromatic;
-	private Boolean paintsquarepolychromatic;
+	private Boolean paintsquareupleftdownpolychromatic;
+	private Boolean paintsquareuprightdownpolychromatic;
+	private Boolean paintsquarerightdownleftpolychromatic;
+	private Boolean paintsquarerightupleftpolychromatic;
+	private Boolean paintsquareleftdownrightpolychromatic;
+	private Boolean paintsquareleftuprightpolychromatic;
+	private Boolean paintsquaredownleftuppolychromatic;
+	private Boolean paintsquaredownrightuppolychromatic;
 	private Boolean paintdiagonalupleftpolychromatic;
 	private Boolean paintdiagonaluprightpolychromatic;
 	private Boolean paintdiagonaldownleftpolychromatic;

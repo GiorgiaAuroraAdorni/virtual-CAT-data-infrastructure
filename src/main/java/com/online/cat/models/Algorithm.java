@@ -54,10 +54,38 @@ public class Algorithm {
 	@NonNull
 	private Boolean paintrightmonochromatic;
 	
-	@Column("PAINTSQUAREMONOCHROMATIC")
+	@Column("PAINTSQUAREUPLEFTDOWNMONOCHROMATIC")
 	@NonNull
-	private Boolean paintsquaremonochromatic;
-	
+	private Boolean paintsquareupleftdownmonochromatic;
+
+	@Column("PAINTSQUAREUPRIGHTDOWNMONOCHROMATIC")
+	@NonNull
+	private Boolean paintsquareuprightdownmonochromatic;
+
+	@Column("PAINTSQUARERIGHTDOWNLEFTMONOCHROMATIC")
+	@NonNull
+	private Boolean paintsquarerightdownleftmonochromatic;
+
+	@Column("PAINTSQUARERIGHTUPLEFTMONOCHROMATIC")
+	@NonNull
+	private Boolean paintsquarerightupleftmonochromatic;
+
+	@Column("PAINTSQUARELEFTDOWNRIGHTMONOCHROMATIC")
+	@NonNull
+	private Boolean paintsquareleftdownrightmonochromatic;
+
+	@Column("PAINTSQUARELEFTUPRIGHTMONOCHROMATIC")
+	@NonNull
+	private Boolean paintsquareleftuprightmonochromatic;
+
+	@Column("PAINTSQUAREDOWNLEFTUPMONOCHROMATIC")
+	@NonNull
+	private Boolean paintsquaredownleftupmonochromatic;
+
+	@Column("PAINTSQUAREDOWNRIGHTUPMONOCHROMATIC")
+	@NonNull
+	private Boolean paintsquaredownrightupmonochromatic;
+
 	@Column("PAINTDIAGONALUPLEFTMONOCHROMATIC")
 	@NonNull
 	private Boolean paintdiagonalupleftmonochromatic;
@@ -153,11 +181,39 @@ public class Algorithm {
 	@Column("PAINTRIGHTPOLYCHROMATIC")
 	@NonNull
 	private Boolean paintrightpolychromatic;
-	
-	@Column("PAINTSQUAREPOLYCHROMATIC")
+
+	@Column("PAINTSQUAREUPLEFTDOWNPOLYCHROMATIC")
 	@NonNull
-	private Boolean paintsquarepolychromatic;
-	
+	private Boolean paintsquareupleftdownpolychromatic;
+
+	@Column("PAINTSQUAREUPRIGHTDOWNPOLYCHROMATIC")
+	@NonNull
+	private Boolean paintsquareuprightdownpolychromatic;
+
+	@Column("PAINTSQUARERIGHTDOWNLEFTPOLYCHROMATIC")
+	@NonNull
+	private Boolean paintsquarerightdownleftpolychromatic;
+
+	@Column("PAINTSQUARERIGHTUPLEFTPOLYCHROMATIC")
+	@NonNull
+	private Boolean paintsquarerightupleftpolychromatic;
+
+	@Column("PAINTSQUARELEFTDOWNRIGHTPOLYCHROMATIC")
+	@NonNull
+	private Boolean paintsquareleftdownrightpolychromatic;
+
+	@Column("PAINTSQUARELEFTUPRIGHTPOLYCHROMATIC")
+	@NonNull
+	private Boolean paintsquareleftuprightpolychromatic;
+
+	@Column("PAINTSQUAREDOWNLEFTUPPOLYCHROMATIC")
+	@NonNull
+	private Boolean paintsquaredownleftuppolychromatic;
+
+	@Column("PAINTSQUAREDOWNRIGHTUPPOLYCHROMATIC")
+	@NonNull
+	private Boolean paintsquaredownrightuppolychromatic;
+
 	@Column("PAINTDIAGONALUPLEFTPOLYCHROMATIC")
 	@NonNull
 	private Boolean paintdiagonalupleftpolychromatic;
