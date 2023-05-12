@@ -29,14 +29,6 @@ public class Session {
 	@NonNull
 	private Long school;
 	
-	@Column(value = "level")
-	@NonNull
-	private Long level;
-	
-	@Column(value = "class")
-	@NonNull
-	private Long classs;
-	
 	@Column(value = "section")
 	@NonNull
 	private String section;
