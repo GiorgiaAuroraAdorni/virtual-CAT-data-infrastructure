@@ -13,8 +13,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON;
-import static org.springframework.web.reactive.function.server.ServerResponse.badRequest;
-import static org.springframework.web.reactive.function.server.ServerResponse.ok;
+import static org.springframework.web.reactive.function.server.ServerResponse.*;
 
 @Component
 @Transactional
@@ -36,5 +35,19 @@ public class SurveyComponent {
 						.onErrorResume(error -> Mono.empty()))
 				.flatMap(survey -> ok().contentType(APPLICATION_JSON).bodyValue(survey))
 				.switchIfEmpty(badRequest().bodyValue("Wrong format"));
+	}
+	
+	@Transactional(readOnly = true)
+	public @NonNull Mono<ServerResponse> getSurvey(ServerRequest request){
+		return request
+				.bodyToMono(Information.class)
+				.flatMap(information -> surveyRepository.findBySessionIDAndStudentID(information.sessionID, information.studentID))
+				.switchIfEmpty(Mono.error(new Exception()))
+				.flatMap(survey -> ok().build())
+				.onErrorResume(error -> notFound().build());
+	}
+	
+	record Information(Long sessionID, Long studentID){
+	
 	}
 }

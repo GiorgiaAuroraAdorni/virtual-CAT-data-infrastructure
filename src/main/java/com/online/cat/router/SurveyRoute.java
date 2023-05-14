@@ -16,6 +16,7 @@ public class SurveyRoute {
 	public RouterFunction<ServerResponse> surveys(SurveyComponent surveyComponent) {
 		return route()
 				.POST("/surveys",accept(APPLICATION_JSON),surveyComponent::addSurvey)
+				.GET("/surveys",accept(APPLICATION_JSON), surveyComponent::getSurvey)
 				.build();
 	}
 }
