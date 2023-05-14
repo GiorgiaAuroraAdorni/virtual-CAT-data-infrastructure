@@ -13,12 +13,13 @@ import java.time.LocalDate;
 public class SessionDTO {
 	private Long supervisor;
 	private Long school;
+	private String schoolGrade;
 	private String section;
 	private LocalDate date;
 	private String notes;
 	private String language;
 	
 	public Session toSession() {
-		return Session.of(supervisor, school, section, date, notes, language);
+		return Session.of(supervisor, school, schoolGrade, section, date, notes, language);
 	}
 }

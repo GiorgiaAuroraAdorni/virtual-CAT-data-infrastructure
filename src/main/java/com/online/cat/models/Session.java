@@ -29,6 +29,10 @@ public class Session {
 	@NonNull
 	private Long school;
 	
+	@Column(value = "schoolGrade")
+	@NonNull
+	private String schoolGrade;
+	
 	@Column(value = "section")
 	@NonNull
 	private String section;

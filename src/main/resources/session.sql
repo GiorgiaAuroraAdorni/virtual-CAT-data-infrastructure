@@ -9,6 +9,7 @@ create table sessions
     school     integer not null
         constraint sessions_schools_id_fk
             references schools,
+    schoolGrade text not null,
     section    text,
     date       date    not null,
     notes      text,
