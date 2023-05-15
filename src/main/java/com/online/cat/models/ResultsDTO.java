@@ -14,7 +14,7 @@ public class ResultsDTO {
 	private Long studentID;
 	private Long schemaID;
 	private Long algorithmID;
-	private Boolean unplugged;
+	private String domain;
 	private Boolean voice;
 	private Boolean schema;
 	private Boolean visualFeedback;
@@ -30,7 +30,7 @@ public class ResultsDTO {
 		return Result.of(studentID,
 				schemaID,
 				algorithmID,
-				unplugged,
+				domain,
 				voice,
 				schema,
 				visualFeedback,

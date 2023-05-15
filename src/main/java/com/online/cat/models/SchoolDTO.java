@@ -10,10 +10,9 @@ import lombok.*;
 @AllArgsConstructor
 public class SchoolDTO {
 	private String name;
-	private String schoolType;
 	private Long canton;
 	
 	public School toSchool() {
-		return School.of(name, schoolType, canton);
+		return School.of(name, canton);
 	}
 }

@@ -29,9 +29,9 @@ public class Result {
 	@Column("algorithm_id")
 	@NonNull
 	private Long algorithmID;
-	@Column("unplugged")
+	@Column("domain")
 	@NonNull
-	private Boolean unplugged;
+	private String domain;
 	@Column("voice")
 	@NonNull
 	private Boolean voice;

@@ -5,7 +5,7 @@ create table results
     student_id         integer               not null,
     schema_id          integer               not null,
     algorithm_id       integer               not null,
-    unplugged          boolean default false not null,
+    domain             text                  not null,
     voice              boolean default false not null,
     schema             boolean default false not null,
     visual_feedback    boolean default false not null,
@@ -15,7 +15,7 @@ create table results
     artefact_dimension integer               not null,
     time               integer               not null,
     timeStamp          datetime              not null,
-    complete          boolean              not null,
+    complete           boolean              not null,
     constraint results_pk
         primary key (id)
 );

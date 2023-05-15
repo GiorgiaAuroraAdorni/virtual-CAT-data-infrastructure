@@ -23,10 +23,6 @@ public class School {
 	@NonNull
 	private String name;
 	
-	@Column(value = "school_type")
-	@NonNull
-	private String schoolType;
-	
 	@Column(value = "canton")
 	@NonNull
 	private Long canton;

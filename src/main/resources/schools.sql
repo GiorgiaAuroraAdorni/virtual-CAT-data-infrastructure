@@ -4,7 +4,6 @@ create table schools
         constraint schools_pk
             primary key,
     name        text,
-    school_type text,
     canton      integer not null
         constraint schools_cantons_id_fk
             references cantons
@@ -14,9 +13,9 @@ create table schools
 create unique index schools_id_uindex
     on schools (id);
 
-INSERT INTO schools (id, name, school_type, canton)
-VALUES (0, 'SM Castione', 'Secondary school', 20);
-INSERT INTO schools (id, name, school_type, canton)
-VALUES (1, 'SI Monte Carasso', 'Pre school', 20);
-INSERT INTO schools (id, name, school_type, canton)
-VALUES (2, 'SE Bellinzona Nord', 'Primary school', 20);
+INSERT INTO schools (id, name, canton)
+VALUES (0, 'SM Castione', 21);
+INSERT INTO schools (id, name, canton)
+VALUES (1, 'SI Monte Carasso', 21);
+INSERT INTO schools (id, name, canton)
+VALUES (2, 'SE Bellinzona Nord', 21);
