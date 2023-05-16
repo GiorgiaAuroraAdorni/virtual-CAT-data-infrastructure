@@ -4,7 +4,7 @@ create table students
         constraint students_pk
             primary key,
     date_of_birth date    not null,
-    gender        boolean not null,
+    gender        text not null,
     session       integer not null
         constraint students_sessions_id_fk
             references sessions

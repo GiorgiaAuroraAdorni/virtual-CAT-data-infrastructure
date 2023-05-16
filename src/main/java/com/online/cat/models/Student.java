@@ -26,7 +26,7 @@ public class Student {
 	
 	@Column(value = "gender")
 	@NonNull
-	private Boolean gender;
+	private String gender;
 	@Column(value = "session")
 	@NonNull
 	private Long session;

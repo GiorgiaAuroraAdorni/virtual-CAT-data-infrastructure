@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class StudentsDTO {
 	private LocalDate date;
-	private Boolean gender;
+	private String gender;
 	private Long session;
 	
 	public Student toStudent() {
