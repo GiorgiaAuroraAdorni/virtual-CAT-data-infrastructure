@@ -44,7 +44,7 @@ public class SurveyComponent {
 				.flatMap(information -> surveyRepository.findBySessionIDAndStudentID(information.sessionID, information.studentID))
 				.switchIfEmpty(Mono.error(new Exception()))
 				.flatMap(survey -> ok().build())
-				.onErrorResume(error -> notFound().build());
+				.onErrorResume(error -> noContent().build());
 	}
 	
 	record Information(Long sessionID, Long studentID){
