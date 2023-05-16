@@ -12,9 +12,23 @@ public class SurveyDTO {
 	
 	private Long sessionID;
 	
-	private String results;
+	private String q1;
 	
-	public Survey toSurvey(){
-		return Survey.of(studentID,sessionID,results);
+	private String q2;
+	
+	private String q3;
+	
+	private String q4;
+	
+	private String q5;
+	
+	private String q6;
+	
+	private String q7;
+	
+	private String q8;
+	
+	public Survey toSurvey() {
+		return Survey.of(studentID, sessionID, q1, q2, q3, q4, q5, q6, q7, q8);
 	}
 }
