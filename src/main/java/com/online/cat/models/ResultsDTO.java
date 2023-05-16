@@ -25,6 +25,8 @@ public class ResultsDTO {
 	private Long time;
 	private LocalDateTime timeStamp;
 	private Boolean complete;
+	private Long coloredCorrectly;
+	private Long colored;
 	
 	public Result toResult() {
 		return Result.of(studentID,
@@ -40,6 +42,8 @@ public class ResultsDTO {
 				artefactDimension,
 				time,
 				timeStamp,
-				complete);
+				complete,
+				coloredCorrectly,
+				colored);
 	}
 }

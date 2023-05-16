@@ -65,4 +65,12 @@ public class Result {
 	@Column(value = "complete")
 	@NonNull
 	private Boolean complete;
+	
+	@Column(value = "colored_correctly")
+	@NonNull
+	private Long coloredCorrectly;
+	
+	@Column(value = "colored")
+	@NonNull
+	private Long colored;
 }
