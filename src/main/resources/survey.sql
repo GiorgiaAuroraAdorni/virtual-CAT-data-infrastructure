@@ -6,12 +6,12 @@ create table survey
         constraint student_id_fk references students,
     session_id integer not null
         constraint session_id_fk references sessions,
-    q1    text    not null,
-    q2    text    not null,
-    q3    text    not null,
-    q4    text    not null,
-    q5    text    not null,
-    q6    text    not null,
-    q7    text    not null,
-    q8    text    not null
+    "Did you enjoy this activity?"                                      text    not null,
+    "Have you ever used an app like this to do exercises and learn?"    text    not null,
+    "Was the app easy to use?"                                          text    not null,
+    "Were the rules of the activity easy to understand?"                text    not null,
+    "Which resolution mode did you prefer to use?"                      text    not null,
+    "Were the exercises easy to solve?"                                 text    not null,
+    "How long did you take to complete the exercises?"                  text    not null,
+    "Would you do this experience again?"                               text    not null
 );

@@ -26,35 +26,35 @@ public class Survey {
 	@NonNull
 	private Long sessionID;
 	
-	@Column(value = "q1")
+	@Column(value = "Did you enjoy this activity?")
 	@NonNull
 	private String q1;
 	
-	@Column(value = "q2")
+	@Column(value = "Have you ever used an app like this to do exercises and learn?")
 	@NonNull
 	private String q2;
 	
-	@Column(value = "q3")
+	@Column(value = "Was the app easy to use?")
 	@NonNull
 	private String q3;
 	
-	@Column(value = "q4")
+	@Column(value = "Were the rules of the activity easy to understand?")
 	@NonNull
 	private String q4;
 	
-	@Column(value = "q5")
+	@Column(value = "Which resolution mode did you prefer to use?")
 	@NonNull
 	private String q5;
 	
-	@Column(value = "q6")
+	@Column(value = "Were the exercises easy to solve?")
 	@NonNull
 	private String q6;
 	
-	@Column(value = "q7")
+	@Column(value = "How long did you take to complete the exercises?")
 	@NonNull
 	private String q7;
 	
-	@Column(value = "q8")
+	@Column(value = "Would you do this experience again?")
 	@NonNull
 	private String q8;
 }
