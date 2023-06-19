@@ -6,6 +6,7 @@ create table survey
         constraint student_id_fk references students,
     session_id                                                    integer not null
         constraint session_id_fk references sessions,
+    time                                                          integer not null,
     Did_you_enjoy_this_activity                                   text    not null,
     Have_you_ever_used_an_app_like_this_to_do_exercises_and_learn text    not null,
     Was_the_app_easy_to_use                                       text    not null,

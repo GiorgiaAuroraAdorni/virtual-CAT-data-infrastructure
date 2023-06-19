@@ -26,6 +26,10 @@ public class Survey {
 	@NonNull
 	private Long sessionID;
 	
+	@Column(value = "time")
+	@NonNull
+	private Long time;
+	
 	@Column(value = "Did_you_enjoy_this_activity")
 	@NonNull
 	private String q1;

@@ -12,6 +12,8 @@ public class SurveyDTO {
 	
 	private Long sessionID;
 	
+	private Long time;
+	
 	private String q1;
 	
 	private String q2;
@@ -29,6 +31,6 @@ public class SurveyDTO {
 	private String q8;
 	
 	public Survey toSurvey() {
-		return Survey.of(studentID, sessionID, q1, q2, q3, q4, q5, q6, q7, q8);
+		return Survey.of(studentID, sessionID, time, q1, q2, q3, q4, q5, q6, q7, q8);
 	}
 }
