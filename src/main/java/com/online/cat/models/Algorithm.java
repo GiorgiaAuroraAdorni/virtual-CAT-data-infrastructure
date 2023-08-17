@@ -293,6 +293,14 @@ public class Algorithm {
 	@Column(value ="paint_zigzag_downrightleft_polychromatic")
 	@NonNull
 	private Boolean paintzigzagdownrightleftpolychromatic;
+	
+	@Column(value ="paint_custom_pattern_monochromatic")
+	@NonNull
+	private Boolean paintCustomPatternMonochromatic;
+	
+	@Column(value ="paint_custom_pattern_polychromatic")
+	@NonNull
+	private Boolean paintCustomPatternPolychromatic;
 
 	@Column(value ="fill_empty")
 	@NonNull

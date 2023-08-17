@@ -1,6 +1,6 @@
 create table algorithms
 (
-    algorithm                             serial
+    algorithm                                serial
         constraint algorithms_pk primary key,
     schema                                   integer               not null,
     commands                                 text                  not null,
@@ -71,6 +71,8 @@ create table algorithms
     paint_zigzag_uprightleft_polychromatic   boolean default false not null,
     paint_zigzag_downleftright_polychromatic boolean default false not null,
     paint_zigzag_downrightleft_polychromatic boolean default false not null,
+    paint_custom_pattern_monochromatic       boolean default false not null,
+    paint_custom_pattern_polychromatic       boolean default false not null,
     fill_empty                               boolean default false not null,
     copy                                     boolean default false not null,
     repeat                                   boolean default false not null,
