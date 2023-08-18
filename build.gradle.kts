@@ -16,6 +16,9 @@ configurations {
 
 repositories {
     mavenCentral()
+    maven{
+        url = uri("https://raw.github.com/idsia/crema/mvn-repo/")
+    }
 }
 
 dependencies {
@@ -23,6 +26,10 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("io.r2dbc:r2dbc-h2")
+    implementation("org.springframework.boot:spring-boot-configuration-processor")
+    implementation("ch.idsia:crema:0.2.2-SNAPSHOT")
+    implementation("org.apache.poi:poi:5.2.2")
+    implementation("org.apache.poi:poi-ooxml:5.2.2")
     implementation("com.h2database:h2")
     compileOnly("org.projectlombok:lombok")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
