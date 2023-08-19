@@ -18,4 +18,8 @@ public class Utils {
 	public static String questionName(String questionId, String subQuestionId) {
 		return questionId + "_" + subQuestionId;
 	}
+	
+	public static String questionName(Integer questionId, Integer subQuestionId) {
+		return questionId.toString() + "_" + subQuestionId.toString();
+	}
 }

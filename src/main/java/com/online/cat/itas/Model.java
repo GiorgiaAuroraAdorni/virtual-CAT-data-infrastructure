@@ -27,14 +27,14 @@ public class Model {
 	final static Set<String> OR_LEFT_LEFT = new HashSet<>();
 	final static Set<String> OR_LEFT = new HashSet<>();
 	final static Set<String> OR_RIGHT = new HashSet<>();
-	final static Set<String> CT_CUBE = new HashSet<>(Arrays.asList("X11", "X12", "X13", "X21", "X22", "X23", "X31",
-			"X32", "X33"));
+	final static Set<String> CT_CUBE = new HashSet<>(Arrays.asList("X11", "X12", "X13", "X14", "X21", "X22", "X23",
+			"X24", "X31", "X32", "X33", "X34"));
 	static int Q_ID = 0;
 	static int SQ_ID = 1;
 	static int Q_TEXT = 3;
 	static int SKILL_START = 3;
 	static int QUESTION_ROW_START = 4;
-
+	
 	static {
 		OR_LEFT_LEFT.add("E1");
 		for (int i = 2; i <= 7; i++)
@@ -42,13 +42,13 @@ public class Model {
 		for (int i = 8; i <= 10; i++)
 			OR_RIGHT.add("E" + i);
 	}
-
+	
 	public final DAGModel<BayesianFactor> model = new DAGModel<>();
 	public final List<Integer> constraints = new ArrayList<>();
-	final Map<String, Integer> nameToIdx = new LinkedHashMap<>();
+	public final Map<String, Integer> nameToIdx = new LinkedHashMap<>();
 	final Map<Integer, String> idxToName = new LinkedHashMap<>();
 	final List<Skill> skills = new ArrayList<>();
-	final Set<String> questionIds = new HashSet<>();
+	public final Set<String> questionIds = new HashSet<>();
 	final Map<Integer, BayesianFactor> factors = new LinkedHashMap<>();
 	public boolean hasLeak = false;
 	public int leakVar = -1;
@@ -125,22 +125,26 @@ public class Model {
 		// Add relations between skills
 		model.addConstraint("X11", "X12");
 		model.addConstraint("X12", "X13");
+		model.addConstraint("X13", "X14");
 		model.addConstraint("X21", "X22");
 		model.addConstraint("X22", "X23");
+		model.addConstraint("X23", "X24");
 		model.addConstraint("X31", "X32");
 		model.addConstraint("X32", "X33");
+		model.addConstraint("X33", "X34");
 		model.addConstraint("X11", "X21");
 		model.addConstraint("X21", "X31");
 		model.addConstraint("X12", "X22");
 		model.addConstraint("X22", "X32");
 		model.addConstraint("X13", "X23");
 		model.addConstraint("X23", "X33");
-		
+		model.addConstraint("X14", "X24");
+		model.addConstraint("X24", "X34");
 		model.assignFactors();
 		
 		return model;
 	}
-
+	
 	int nSkill() {
 		return skills.size();
 	}

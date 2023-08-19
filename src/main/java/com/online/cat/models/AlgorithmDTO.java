@@ -78,8 +78,8 @@ public class AlgorithmDTO {
 	private Boolean paintzigzaguprightleftpolychromatic;
 	private Boolean paintzigzagdownleftrightpolychromatic;
 	private Boolean paintzigzagdownrightleftpolychromatic;
-	private Boolean paintCustomPatternMonochromatic;
-	private Boolean paintCustomPatternPolychromatic;
+	private Boolean paintcustompatternmonochromatic;
+	private Boolean paintcustompatternpolychromatic;
 	private Boolean fillempty;
 	private Boolean copy;
 	private Boolean repeat;
@@ -166,8 +166,8 @@ public class AlgorithmDTO {
 				this.paintzigzagdownleftrightpolychromatic,
 				this.paintzigzagdownrightleftpolychromatic,
 				//
-				this.paintCustomPatternMonochromatic,
-				this.paintCustomPatternPolychromatic,
+				this.paintcustompatternmonochromatic,
+				this.paintcustompatternpolychromatic,
 				//
 				this.fillempty,
 				this.copy,
