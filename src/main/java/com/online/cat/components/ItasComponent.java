@@ -64,9 +64,6 @@ public class ItasComponent {
 		if (model.hasLeak)
 			obs.put(model.leakVar, 1);
 		
-//		List<BayesianFactor> test_qs = Arrays.stream(skills).mapToObj(s -> infVE.query(model.model, obs, s)).toList();
-//		final double[] test_outs = test_qs.stream().map(x -> x.getValue(1)).mapToDouble(x -> x).toArray();
-//		logger.info(String.format("%3d: %s%n", results.get(0).getStudentID(), Arrays.toString(test_outs)));
 		for(var result: results){
 			Algorithm algo = null;
 			try {
@@ -89,7 +86,6 @@ public class ItasComponent {
 			boolean feedback = result.getVisualFeedback();
 			Boolean complete = result.getComplete();
 			final Map<String, Integer> answers = new LinkedHashMap<>();
-			logger.info(String.valueOf(dimension));
 			
 			if (!complete) {
 				for (int i = 1; i <= 12; i++) {
