@@ -64,11 +64,10 @@ public class ItasComponent {
 		if (model.hasLeak)
 			obs.put(model.leakVar, 1);
 		
-		List<BayesianFactor> test_qs = Arrays.stream(skills).mapToObj(s -> infVE.query(model.model, obs, s)).toList();
-		final double[] test_outs = test_qs.stream().map(x -> x.getValue(1)).mapToDouble(x -> x).toArray();
-		logger.info(String.format("%3d: %s%n", results.get(0).getStudentID(), Arrays.toString(test_outs)));
-		
-		results.forEach(result -> {
+//		List<BayesianFactor> test_qs = Arrays.stream(skills).mapToObj(s -> infVE.query(model.model, obs, s)).toList();
+//		final double[] test_outs = test_qs.stream().map(x -> x.getValue(1)).mapToDouble(x -> x).toArray();
+//		logger.info(String.format("%3d: %s%n", results.get(0).getStudentID(), Arrays.toString(test_outs)));
+		for(var result: results){
 			Algorithm algo = null;
 			try {
 				algo = algorithmsRepository
@@ -77,10 +76,11 @@ public class ItasComponent {
 						.onErrorResume(error -> Mono.empty())
 						.toFuture().get();
 			} catch (InterruptedException | ExecutionException e) {
-				throw new RuntimeException(e);
+				logger.error(e.getMessage());
+				continue;
 			}
 			if (algo == null) {
-				return;
+				continue;
 			}
 			int dimension = algo.getAlgorithmDimension();
 			Boolean text = result.getText();
@@ -89,6 +89,7 @@ public class ItasComponent {
 			boolean feedback = result.getVisualFeedback();
 			Boolean complete = result.getComplete();
 			final Map<String, Integer> answers = new LinkedHashMap<>();
+			logger.info(String.valueOf(dimension));
 			
 			if (!complete) {
 				for (int i = 1; i <= 12; i++) {
@@ -154,13 +155,13 @@ public class ItasComponent {
 					answers.put(questionName(Math.toIntExact(result.getSchemaID()), i), 1);
 				}
 			}
-			answers.forEach((q, answer) -> {
+			for(var q: answers.keySet()){
 				if (!model.questionIds.contains(q))
-					return;
+					continue;
 				final int i = model.nameToIdx.get(q);
-				obs.put(i, answer);
-			});
-		});
+				obs.put(i, answers.get(q));
+			}
+		}
 		
 		final int[] skills = model.skillIds();
 		
