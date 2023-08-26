@@ -17,6 +17,7 @@ public class StudentRouter {
         return route()
                 .POST("/students",accept(APPLICATION_JSON),studentComponent::addStudent)
                 .GET("/students",accept(APPLICATION_JSON), studentComponent::getAll)
+                .GET("/student",accept(APPLICATION_JSON), studentComponent::getStudent)
                 .build();
     }
 }

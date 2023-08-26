@@ -43,4 +43,18 @@ public class StudentComponent {
 	public @NonNull Mono<ServerResponse> getAll(ServerRequest request) {
 		return ok().contentType(APPLICATION_JSON).body(studentsRepository.findAll(), Student.class);
 	}
+	
+	@Transactional(readOnly = true)
+	public @NonNull Mono<ServerResponse> getStudent(ServerRequest request) {
+		return request.bodyToMono(StudentL.class)
+				.flatMap(student -> studentsRepository
+						.findStudentByIdIsAndSession(student.id, student.sessionID)
+						.doOnError(error -> logger.error(error.getMessage()))
+						.onErrorResume(error -> Mono.empty()))
+				.flatMap(student -> ok().contentType(APPLICATION_JSON).bodyValue(student))
+				.switchIfEmpty(badRequest().bodyValue("Wrong format"));
+	}
+	
+	record StudentL(Long id, Long sessionID) {
+	}
 }
