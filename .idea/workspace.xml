@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="435b07b6-fc7a-4ae1-8059-c4db055bc7ae" name="Changes" comment="Fixed typing.">
+    <list default="true" id="435b07b6-fc7a-4ae1-8059-c4db055bc7ae" name="Changes" comment="Partial integration of itas">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/CatLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/CatLogs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/CatLogsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/CatLogsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/ResultsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/ResultsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/SessionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/SessionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/cat/models/StudentsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/cat/models/StudentsDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,32 +29,114 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="model_integration" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vladimir98vk"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="53dceaeb-02aa-4538-9cc1-af39d554a63f" />
+        <option name="url" value="https://github.com/GiorgiaAuroraAdorni/virtual-CAT-database.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2OehuLq1xWsenP7DbhtZpHN4Ytq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vladimirkarpenko/Documents/git/virtual-CAT-databse&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3fb75e91c54e077b33a2cf2494b7c83e&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "android.gradle.sync.needed": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/vladimirkarpenko/Documents/git/virtual-CAT-databse/src/main/resources",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "3fb75e91c54e077b33a2cf2494b7c83e"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="/private/var/folders/tj/d0yhp2mx59l2fn203879d7_c0000gn/T/qodana_output1/qodana.sarif.json" />
+        <option name="reportGuid" value="704e12cb-3977-4d85-8b9c-f9f01ed9215c" />
+        <option name="reportName" value="cat_online/qodana/2023-08-26" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="/private/var/folders/tj/d0yhp2mx59l2fn203879d7_c0000gn/T/qodana_output1/qodana.sarif.json" reportGuid="704e12cb-3977-4d85-8b9c-f9f01ed9215c" reportId="cat_online/qodana/2023-08-26" />
+    </option>
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="virtual-CAT-databse" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="virtual-CAT-databse" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CatOnlineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cat_online.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.online.cat.CatOnlineApplication" />
@@ -70,6 +153,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CatOnlineApplication" />
+        <item itemvalue="Spring Boot.CatOnlineApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -83,12 +167,220 @@
       <updated>1681927176192</updated>
       <workItem from="1681927177220" duration="2430000" />
       <workItem from="1682000739261" duration="607000" />
-      <workItem from="1682088405313" duration="490000" />
+      <workItem from="1682088405313" duration="528000" />
+      <workItem from="1682168150723" duration="607000" />
+      <workItem from="1682342097584" duration="39240000" />
+      <workItem from="1683636085179" duration="8851000" />
+      <workItem from="1683809289006" duration="14573000" />
+      <workItem from="1684155250256" duration="12450000" />
+      <workItem from="1684247984889" duration="4319000" />
+      <workItem from="1684674801584" duration="1045000" />
+      <workItem from="1684679929765" duration="1499000" />
+      <workItem from="1685008965855" duration="1206000" />
+      <workItem from="1685016132309" duration="1040000" />
+      <workItem from="1685262047064" duration="354000" />
+      <workItem from="1687191738577" duration="748000" />
+      <workItem from="1687785196065" duration="6000" />
+      <workItem from="1688391594189" duration="10345000" />
+      <workItem from="1688816959491" duration="3605000" />
+      <workItem from="1689925357704" duration="18000" />
+      <workItem from="1691589137663" duration="667000" />
+      <workItem from="1691662390541" duration="8000" />
+      <workItem from="1692270669382" duration="44028000" />
+      <workItem from="1692599884512" duration="684000" />
+      <workItem from="1692772844209" duration="616000" />
+      <workItem from="1693038681065" duration="53000" />
+      <workItem from="1693038996783" duration="70000" />
+      <workItem from="1693039074108" duration="204000" />
+      <workItem from="1693039286229" duration="6709000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed typing.">
+      <created>1682088905318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682088905318</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added routes to retrieve students and sessions from the database.">
+      <created>1682436835517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682436835517</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added flag to the result to indicate if schema was completed or skipped.">
+      <created>1682450423275</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682450423275</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Exported new routes for session continuation.">
+      <created>1682546686842</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682546686842</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Configuration for survey.">
+      <created>1682583851327</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682583851327</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added missing parameters.">
+      <created>1682596822574</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682596822574</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed typo in sql file">
+      <created>1682599833657</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682599833657</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fields update.">
+      <created>1683921379703</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683921379703</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Change in session">
+      <created>1684076055920</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684076055920</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Check if survey already complete">
+      <created>1684079567554</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684079567554</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updated survey">
+      <created>1684233005805</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684233005805</updated>
+    </task>
+    <task id="LOCAL-00012" summary="When survey is not present return no content">
+      <created>1684238378187</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684238378187</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Two new columns in results">
+      <created>1684244007538</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684244007538</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added time for survey.">
+      <created>1687191855785</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1687191855785</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added algorithm components">
+      <option name="closed" value="true" />
+      <created>1692271207816</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1692271207816</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Partial integration of itas">
+      <option name="closed" value="true" />
+      <created>1692366454113</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1692366454113</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Partial integration of itas">
+      <option name="closed" value="true" />
+      <created>1692463254986</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1692463254986</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Partial integration of itas">
+      <option name="closed" value="true" />
+      <created>1692520569645</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1692520569645</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Partial integration of itas">
+      <option name="closed" value="true" />
+      <created>1692523522955</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1692523522955</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Get single student.">
+      <option name="closed" value="true" />
+      <created>1693054881610</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1693054881610</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Refactor Boolean variable names for consistency">
+      <option name="closed" value="true" />
+      <created>1693056152644</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1693056152644</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed typing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed typing." />
+    <MESSAGE value="Added routes to retrieve students and sessions from the database." />
+    <MESSAGE value="Added flag to the result to indicate if schema was completed or skipped." />
+    <MESSAGE value="Exported new routes for session continuation." />
+    <MESSAGE value="Configuration for survey." />
+    <MESSAGE value="Added missing parameters." />
+    <MESSAGE value="Fixed typo in sql file" />
+    <MESSAGE value="Fields update." />
+    <MESSAGE value="Change in session" />
+    <MESSAGE value="Check if survey already complete" />
+    <MESSAGE value="Updated survey" />
+    <MESSAGE value="When survey is not present return no content" />
+    <MESSAGE value="Two new columns in results" />
+    <MESSAGE value="Added time for survey." />
+    <MESSAGE value="Added algorithm components" />
+    <MESSAGE value="Get single student." />
+    <MESSAGE value="Partial integration of itas" />
+    <MESSAGE value="Refactor Boolean variable names for consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor Boolean variable names for consistency" />
   </component>
 </project>
