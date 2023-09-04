@@ -22,7 +22,10 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import static com.online.cat.itas.Utils.questionName;
@@ -64,7 +67,7 @@ public class ItasComponent {
 		if (model.hasLeak)
 			obs.put(model.leakVar, 1);
 		
-		for(var result: results){
+		for (var result : results) {
 			Algorithm algo = null;
 			try {
 				algo = algorithmsRepository
@@ -86,72 +89,128 @@ public class ItasComponent {
 			boolean feedback = result.getVisualFeedback();
 			Boolean complete = result.getComplete();
 			final Map<String, Integer> answers = new LinkedHashMap<>();
+			int schema_id = Math.toIntExact(result.getSchemaID());
+			
+			answers.put(questionName(schema_id, 1), algo.getPaintdot() ? 1 : 0);
+			answers.put(questionName(schema_id, 2), algo.getFillempty() ? 1 : 0);
+			answers.put(questionName(schema_id, 3),
+					algo.getPaintCustomPatternMonochromatic() ? 1 : 0);
+			answers.put(questionName(schema_id, 4), (
+					algo.getPaintleftmonochromatic() ||
+							algo.getPaintrightmonochromatic() ||
+							algo.getPaintupmonochromatic() ||
+							algo.getPaintdownmonochromatic()
+			) ? 1 : 0);
+			answers.put(questionName(schema_id, 5), (
+					algo.getPaintsquareupleftdownmonochromatic() ||
+							algo.getPaintsquareuprightdownmonochromatic() ||
+							algo.getPaintsquarerightdownleftmonochromatic() ||
+							algo.getPaintsquarerightupleftmonochromatic() ||
+							algo.getPaintsquareleftdownrightmonochromatic() ||
+							algo.getPaintsquareleftuprightmonochromatic() ||
+							algo.getPaintsquaredownleftupmonochromatic() ||
+							algo.getPaintsquaredownrightupmonochromatic()
+			) ? 1 : 0);
+			answers.put(questionName(schema_id, 6), (
+					algo.getPaintdiagonalupleftmonochromatic() ||
+							algo.getPaintdiagonaluprightmonochromatic() ||
+							algo.getPaintdiagonaldownleftmonochromatic() ||
+							algo.getPaintdiagonaldownrightmonochromatic()
+			) ? 1 : 0);
+			answers.put(questionName(schema_id, 7), (
+					algo.getPaintlupleftmonochromatic() ||
+							algo.getPaintluprightmonochromatic() ||
+							algo.getPaintldownleftmonochromatic() ||
+							algo.getPaintldownrightmonochromatic() ||
+							algo.getPaintlleftupmonochromatic() ||
+							algo.getPaintlleftdownmonochromatic() ||
+							algo.getPaintlrightupmonochromatic() ||
+							algo.getPaintlrightdownmonochromatic()
+			) ? 1 : 0);
+			answers.put(questionName(schema_id, 8), (
+					algo.getPaintzigzagleftupdownmonochromatic() ||
+							algo.getPaintzigzagleftdownupmonochromatic() ||
+							algo.getPaintzigzagrightupdownmonochromatic() ||
+							algo.getPaintzigzagrightdownupmonochromatic() ||
+							algo.getPaintzigzagupleftrightmonochromatic() ||
+							algo.getPaintzigzaguprightleftmonochromatic() ||
+							algo.getPaintzigzagdownleftrightmonochromatic() ||
+							algo.getPaintzigzagdownrightleftmonochromatic()
+			) ? 1 : 0);
+			answers.put(questionName(schema_id, 9),
+					algo.getPaintCustomPatternPolychromatic() ? 1 : 0);
+			answers.put(questionName(schema_id, 10), (
+					algo.getPaintleftpolychromatic() ||
+							algo.getPaintrightpolychromatic() ||
+							algo.getPaintuppolychromatic() ||
+							algo.getPaintdownpolychromatic()
+			) ? 1 : 0);
+			answers.put(questionName(schema_id, 11), (
+					algo.getPaintsquareupleftdownpolychromatic() ||
+							algo.getPaintsquareuprightdownpolychromatic() ||
+							algo.getPaintsquarerightdownleftpolychromatic() ||
+							algo.getPaintsquarerightupleftpolychromatic() ||
+							algo.getPaintsquareleftdownrightpolychromatic() ||
+							algo.getPaintsquareleftuprightpolychromatic() ||
+							algo.getPaintsquaredownleftuppolychromatic() ||
+							algo.getPaintsquaredownrightuppolychromatic()
+			) ? 1 : 0);
+			answers.put(questionName(schema_id, 12), (
+					algo.getPaintdiagonalupleftpolychromatic() ||
+							algo.getPaintdiagonaluprightpolychromatic() ||
+							algo.getPaintdiagonaldownleftpolychromatic() ||
+							algo.getPaintdiagonaldownrightpolychromatic() ||
+							algo.getPaintzigzagleftupdownpolychromatic() ||
+							algo.getPaintzigzagleftdownuppolychromatic() ||
+							algo.getPaintzigzagrightupdownpolychromatic() ||
+							algo.getPaintzigzagrightdownuppolychromatic() ||
+							algo.getPaintzigzagupleftrightpolychromatic() ||
+							algo.getPaintzigzaguprightleftpolychromatic() ||
+							algo.getPaintzigzagdownleftrightpolychromatic() ||
+							algo.getPaintzigzagdownrightleftpolychromatic()
+			) ? 1 : 0);
+			answers.put(questionName(schema_id, 13), (
+					algo.getCopy() || algo.getRepeat()
+			) ? 1 : 0);
+			answers.put(questionName(schema_id, 14), (
+					algo.getMirrorcrossvertical() ||
+							algo.getMirrorcrosshorizontal() ||
+							algo.getMirrorcellsvertical() ||
+							algo.getMirrorcellshorizontal() ||
+							algo.getMirrorcommandsvertical() ||
+							algo.getMirrorcommandshorizontal()
+			) ? 1 : 0);
 			
 			if (!complete) {
-				for (int i = 1; i <= 12; i++) {
-					answers.put(questionName(Math.toIntExact(result.getSchemaID()), i), 0);
+				for (int i = 15; i <= 26; i++) {
+					answers.put(questionName(schema_id, i), 0);
 				}
 			} else if (dimension == 0 && feedback && gesture) {
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 1), 1);
+				answers.put(questionName(schema_id, 15), 1);
 			} else if (dimension == 0 && gesture) {
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 1), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 2), 1);
+				answers.put(questionName(schema_id, 16), 1);
 			} else if (dimension == 0 && feedback && (blocks || text)) {
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 1), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 2), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 3), 1);
+				answers.put(questionName(schema_id, 17), 1);
 			} else if (dimension == 0 && (blocks || text)) {
-				for (int i = 1; i <= 4; i++) {
-					answers.put(questionName(Math.toIntExact(result.getSchemaID()), i), 1);
-				}
+				answers.put(questionName(schema_id, 18), 1);
 			} else if (dimension == 1 && feedback && gesture) {
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 1), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 5), 1);
+				answers.put(questionName(schema_id, 19), 1);
 			} else if (dimension == 1 && gesture) {
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 1), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 2), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 5), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 6), 1);
+				answers.put(questionName(schema_id, 20), 1);
 			} else if (dimension == 1 && feedback && (blocks || text)) {
-				for (int i = 1; i <= 7; i++) {
-					answers.put(questionName(Math.toIntExact(result.getSchemaID()), i), 1);
-				}
+				answers.put(questionName(schema_id, 21), 1);
 			} else if (dimension == 1 && (blocks || text)) {
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 1), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 2), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 3), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 4), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 5), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 6), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 7), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 8), 1);
+				answers.put(questionName(schema_id, 22), 1);
 			} else if (dimension == 2 && feedback && gesture) {
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 1), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 5), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 9), 1);
+				answers.put(questionName(schema_id, 23), 1);
 			} else if (dimension == 2 && gesture) {
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 1), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 2), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 5), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 6), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 9), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 10), 1);
+				answers.put(questionName(schema_id, 24), 1);
 			} else if (dimension == 2 && feedback && (blocks || text)) {
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 1), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 2), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 3), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 5), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 6), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 7), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 9), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 10), 1);
-				answers.put(questionName(Math.toIntExact(result.getSchemaID()), 11), 1);
+				answers.put(questionName(schema_id, 25), 1);
 			} else if (dimension == 2 && (blocks || text)) {
-				for (int i = 1; i <= 12; i++) {
-					answers.put(questionName(Math.toIntExact(result.getSchemaID()), i), 1);
-				}
+				answers.put(questionName(schema_id, 26), 1);
 			}
-			for(var q: answers.keySet()){
+			for (var q : answers.keySet()) {
 				if (!model.questionIds.contains(q))
 					continue;
 				final int i = model.nameToIdx.get(q);
@@ -165,15 +224,6 @@ public class ItasComponent {
 		final double[] outs = query.stream().map(x -> x.getValue(1)).mapToDouble(x -> x).toArray();
 		logger.info(String.format("%3d: %s%n", results.get(0).getStudentID(), Arrays.toString(outs)));
 		return Mono.just(outs);
-	}
-	
-	static List<Double> arrayToList(final double[] array) {
-		final List<Double> l = new ArrayList<>(array.length);
-		
-		for (final double s : array) {
-			l.add(s);
-		}
-		return (l);
 	}
 	
 	@Transactional(readOnly = true)

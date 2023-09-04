@@ -115,6 +115,7 @@ public class AlgorithmDTO {
 				this.paintdiagonaluprightmonochromatic,
 				this.paintdiagonaldownleftmonochromatic,
 				this.paintdiagonaldownrightmonochromatic,
+				//
 				this.paintlupleftmonochromatic,
 				this.paintluprightmonochromatic,
 				this.paintldownleftmonochromatic,
@@ -123,6 +124,7 @@ public class AlgorithmDTO {
 				this.paintlleftdownmonochromatic,
 				this.paintlrightupmonochromatic,
 				this.paintlrightdownmonochromatic,
+				//
 				this.paintzigzagleftupdownmonochromatic,
 				this.paintzigzagleftdownupmonochromatic,
 				this.paintzigzagrightupdownmonochromatic,
@@ -131,6 +133,7 @@ public class AlgorithmDTO {
 				this.paintzigzaguprightleftmonochromatic,
 				this.paintzigzagdownleftrightmonochromatic,
 				this.paintzigzagdownrightleftmonochromatic,
+				//
 				this.paintuppolychromatic,
 				this.paintdownpolychromatic,
 				this.paintleftpolychromatic,
@@ -149,6 +152,7 @@ public class AlgorithmDTO {
 				this.paintdiagonaluprightpolychromatic,
 				this.paintdiagonaldownleftpolychromatic,
 				this.paintdiagonaldownrightpolychromatic,
+				//
 				this.paintlupleftpolychromatic,
 				this.paintluprightpolychromatic,
 				this.paintldownleftpolychromatic,
@@ -157,6 +161,7 @@ public class AlgorithmDTO {
 				this.paintlleftdownpolychromatic,
 				this.paintlrightuppolychromatic,
 				this.paintlrightdownpolychromatic,
+				//
 				this.paintzigzagleftupdownpolychromatic,
 				this.paintzigzagleftdownuppolychromatic,
 				this.paintzigzagrightupdownpolychromatic,
