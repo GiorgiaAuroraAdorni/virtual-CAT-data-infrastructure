@@ -1,0 +1,33 @@
+create table itas
+(
+    id         serial
+        constraint itas_pk primary key,
+    student_id integer          not null,
+    e1         double precision not null,
+    e2         double precision not null,
+    e3         double precision not null,
+    e4         double precision not null,
+    e5         double precision not null,
+    e6         double precision not null,
+    e7         double precision not null,
+    e8         double precision not null,
+    e9         double precision not null,
+    e10        double precision not null,
+    e11        double precision not null,
+    e12        double precision not null,
+    e13        double precision not null,
+    e14        double precision not null,
+    x11        double precision not null,
+    x12        double precision not null,
+    x13        double precision not null,
+    x14        double precision not null,
+    x21        double precision not null,
+    x22        double precision not null,
+    x23        double precision not null,
+    x24        double precision not null,
+    x31        double precision not null,
+    x32        double precision not null,
+    x33        double precision not null,
+    x34        double precision not null,
+    constraint itas_pk primary key (id)
+);

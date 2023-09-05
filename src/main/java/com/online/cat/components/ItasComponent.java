@@ -8,8 +8,10 @@ import ch.idsia.crema.model.graphical.GraphicalModel;
 import com.online.cat.helper.ItasModelProperties;
 import com.online.cat.itas.Model;
 import com.online.cat.models.Algorithm;
+import com.online.cat.models.ITAS;
 import com.online.cat.models.Result;
 import com.online.cat.repository.AlgorithmsRepository;
+import com.online.cat.repository.ITASRepository;
 import com.online.cat.repository.ResultsRepository;
 import gnu.trove.map.hash.TIntIntHashMap;
 import lombok.NonNull;
@@ -44,13 +46,14 @@ public class ItasComponent {
 	Model model;
 	ItasModelProperties catProperties;
 	ResultsRepository resultsRepository;
-	
 	AlgorithmsRepository algorithmsRepository;
+	ITASRepository itasRepository;
 	
 	public ItasComponent(ItasModelProperties catProperties, ResultsRepository resultsRepository,
-	                     AlgorithmsRepository algorithmsRepository) throws IOException {
+	                     AlgorithmsRepository algorithmsRepository, ITASRepository itasRepository) throws IOException {
 		this.resultsRepository = resultsRepository;
 		this.algorithmsRepository = algorithmsRepository;
+		this.itasRepository = itasRepository;
 		this.catProperties = catProperties;
 		model = Model.parse(catProperties.getModel().getPath());
 		final MinFillOrdering mfo = new MinFillOrdering();
@@ -60,6 +63,7 @@ public class ItasComponent {
 	}
 	
 	private Mono<double[]> runModel(List<Result> results) {
+		Long studentID = results.get(0).getStudentID();
 		final TIntIntHashMap obs = new TIntIntHashMap();
 		if (catProperties.getModel().isConstrained())
 			for (Integer constraint : model.constraints)
@@ -92,9 +96,12 @@ public class ItasComponent {
 			int schema_id = Math.toIntExact(result.getSchemaID());
 			
 			answers.put(questionName(schema_id, 1), algo.getPaintdot() ? 1 : 0);
+			
 			answers.put(questionName(schema_id, 2), algo.getFillempty() ? 1 : 0);
+			
 			answers.put(questionName(schema_id, 3),
 					algo.getPaintCustomPatternMonochromatic() ? 1 : 0);
+			
 			answers.put(questionName(schema_id, 4), (
 					algo.getPaintleftmonochromatic() ||
 							algo.getPaintrightmonochromatic() ||
@@ -223,7 +230,8 @@ public class ItasComponent {
 		List<BayesianFactor> query = Arrays.stream(skills).mapToObj(s -> infVE.query(model.model, obs, s)).toList();
 		final double[] outs = query.stream().map(x -> x.getValue(1)).mapToDouble(x -> x).toArray();
 		logger.info(String.format("%3d: %s%n", results.get(0).getStudentID(), Arrays.toString(outs)));
-		return Mono.just(outs);
+		
+		return itasRepository.save(new ITAS(studentID, outs)).then(Mono.just(outs));
 	}
 	
 	@Transactional(readOnly = true)

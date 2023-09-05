@@ -52,7 +52,8 @@ public class DatabaseConfig extends AbstractR2dbcConfiguration {
 						new ClassPathResource("algorithms.sql"),
 						new ClassPathResource("results.sql"),
 						new ClassPathResource("logs.sql"),
-						new ClassPathResource("survey.sql")
+						new ClassPathResource("survey.sql"),
+						new ClassPathResource("itas.sql")
 				));
 		
 		initializer.setDatabasePopulator(populator);
