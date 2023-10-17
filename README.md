@@ -1,5 +1,7 @@
 # virtual-CAT-data-infrastructure
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10015012.svg)](https://doi.org/10.5281/zenodo.10015012)
+
 This repository contains the data infrastructure for the virtual Cross Array Task (CAT) platform. It provides instructions and scripts for setting up the data handling and storage system for the virtual CAT application.
 
 ## Requirements
