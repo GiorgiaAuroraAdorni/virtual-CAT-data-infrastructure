@@ -1,16 +1,31 @@
 # virtual-CAT-data-infrastructure
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10015012.svg)](https://doi.org/10.5281/zenodo.10015012)
+### Citation
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10015011.svg)](https://doi.org/10.5281/zenodo.10015011)
 
+If you use the materials provided in this repository, please cite the following work:
+
+```bibtex
+   @misc{adorni_virtualCATdatainfrastructure_2023,
+     author = {Adorni, Giorgia and Karpenko, Volodymyr},
+     doi = {10.5281/zenodo.10015011},
+     month = oct,
+     title = {{virtual CAT data infrastructure}},
+     note = {Zenodo Software. \url{https://doi.org/10.5281/zenodo.10015011}},
+     year = {2023}
+   }
+```
+
+### Overview 
 This repository contains the data infrastructure for the virtual Cross Array Task (CAT) platform. It provides instructions and scripts for setting up the data handling and storage system for the virtual CAT application.
 
-## Requirements
+#### Requirements
 
 - [Gradle](https://gradle.org/): Ensure you have Gradle installed on your macOS system. You can install it using Homebrew with the following command:
   ```shell
   brew install gradle
 
-## Setting Up WiFi Sharing (One-time Setup)
+#### Setting Up WiFi Sharing (One-time Setup)
 To enable WiFi sharing on your macOS system, follow these steps:
 
 1. Create a Loopback network service:
@@ -23,7 +38,7 @@ To enable WiFi sharing on your macOS system, follow these steps:
    sudo networksetup -createnetworkservice WifiSharing lo0
    sudo networksetup -setmanual WifiSharing 172.20.42.42 255.255.255.255
    
-## Usage
+#### Usage
 Follow these steps to set up and run the virtual CAT data infrastructure:
 
 1. Clone this repository and navigate to the project folder:
@@ -49,10 +64,16 @@ Follow these steps to set up and run the virtual CAT data infrastructure:
 Use the following JDBC URL: jdbc:h2:~/demodb.  
 Enter the appropriate username and password.
 
-## Contributing
-If you would like to contribute to this project, please fork the repository and create a pull request with your changes.
-
-## License
-This project is licensed under the Creative Commons Attribution 4.0 International License.
 
 
+##### REFERENCES
+
+**[1]** A. Piatti, G. Adorni, L. El-Hamamsy, L. Negrini, D. Assaf, L. Gambardella & F. Mondada. (2022). The CT-cube: A framework for the design and the assessment of computational thinking activities. Computers in Human Behavior Reports, 5, 100166. https://doi.org/10.1016/j.chbr.2021.100166
+
+**[2]** Adorni, G. (2023). Dataset from the pilot study of the virtual CAT platform for algorithmic thinking skills assessment in Swiss Compulsory Education. Zenodo Dataset. https://doi.org/10.5281/zenodo.10018292
+
+**[3]** Adorni, G., & Karpenko, V. (2023). virtual CAT: An app for algorithmic thinking assessment within Swiss compulsory education. Zenodo Software. https://doi.org/10.5281/zenodo.10027851
+On GitHub: https://github.com/GiorgiaAuroraAdorni/virtual-CAT-app/
+
+**[4]** Adorni, G., & Karpenko, V. (2023). virtual CAT programming language interpreter. Zenodo Software. https://doi.org/10.5281/zenodo.10016535 
+On GitHub: https://github.com/GiorgiaAuroraAdorni/virtual-CAT-programming-language-interpreter/
