@@ -21,9 +21,10 @@ This repository contains the data infrastructure for the virtual Cross Array Tas
 
 #### Requirements
 
-- [Gradle](https://gradle.org/): Ensure you have Gradle installed on your macOS system. You can install it using Homebrew with the following command:
+- **Gradle 7.6**: Ensure you have [Gradle](https://gradle.org/) installed on your macOS system. You can install it using Homebrew with the following command:
   ```shell
   brew install gradle
+- **Java 18.0.2.1**: Ensure you have this version of the Java Development Kit (JDK) installed on your system. You can download it from the [Oracle website](https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html) or use a version manager like sdkman or jenv to install and manage your Java versions.
 
 #### Setting Up WiFi Sharing (One-time Setup)
 To enable WiFi sharing on your macOS system, follow these steps:
